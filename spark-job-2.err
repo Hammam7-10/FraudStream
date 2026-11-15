@@ -1,0 +1,691 @@
+ Container progect-spark-submit-run-c06139eb0599 Creating 
+ Container progect-spark-submit-run-c06139eb0599 Created 
+Ivy Default Cache set to: /tmp/.ivy/cache
+The jars for the packages stored in: /tmp/.ivy/jars
+org.mongodb.spark#mongo-spark-connector_2.12 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-23932e4c-13e5-4324-8105-a22d2e794205;1.0
+	confs: [default]
+	found org.mongodb.spark#mongo-spark-connector_2.12;10.4.0 in central
+	found org.mongodb#mongodb-driver-sync;5.1.4 in central
+	[5.1.4] org.mongodb#mongodb-driver-sync;[5.1.1,5.1.99)
+	found org.mongodb#bson;5.1.4 in central
+	found org.mongodb#mongodb-driver-core;5.1.4 in central
+	found org.mongodb#bson-record-codec;5.1.4 in central
+downloading https://repo1.maven.org/maven2/org/mongodb/spark/mongo-spark-connector_2.12/10.4.0/mongo-spark-connector_2.12-10.4.0.jar ...
+	[SUCCESSFUL ] org.mongodb.spark#mongo-spark-connector_2.12;10.4.0!mongo-spark-connector_2.12.jar (714ms)
+downloading https://repo1.maven.org/maven2/org/mongodb/mongodb-driver-sync/5.1.4/mongodb-driver-sync-5.1.4.jar ...
+	[SUCCESSFUL ] org.mongodb#mongodb-driver-sync;5.1.4!mongodb-driver-sync.jar (371ms)
+downloading https://repo1.maven.org/maven2/org/mongodb/bson/5.1.4/bson-5.1.4.jar ...
+	[SUCCESSFUL ] org.mongodb#bson;5.1.4!bson.jar (364ms)
+downloading https://repo1.maven.org/maven2/org/mongodb/mongodb-driver-core/5.1.4/mongodb-driver-core-5.1.4.jar ...
+	[SUCCESSFUL ] org.mongodb#mongodb-driver-core;5.1.4!mongodb-driver-core.jar (846ms)
+downloading https://repo1.maven.org/maven2/org/mongodb/bson-record-codec/5.1.4/bson-record-codec-5.1.4.jar ...
+	[SUCCESSFUL ] org.mongodb#bson-record-codec;5.1.4!bson-record-codec.jar (356ms)
+:: resolution report :: resolve 12298ms :: artifacts dl 2664ms
+	:: modules in use:
+	org.mongodb#bson;5.1.4 from central in [default]
+	org.mongodb#bson-record-codec;5.1.4 from central in [default]
+	org.mongodb#mongodb-driver-core;5.1.4 from central in [default]
+	org.mongodb#mongodb-driver-sync;5.1.4 from central in [default]
+	org.mongodb.spark#mongo-spark-connector_2.12;10.4.0 from central in [default]
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |   5   |   5   |   5   |   0   ||   5   |   5   |
+	---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-23932e4c-13e5-4324-8105-a22d2e794205
+	confs: [default]
+	5 artifacts copied, 0 already retrieved (2522kB/12ms)
+26/09/15 11:23:57 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+26/09/15 11:23:58 INFO SparkContext: Running Spark version 3.5.3
+26/09/15 11:23:58 INFO SparkContext: OS info Linux, 6.18.33.2-microsoft-standard-WSL2, amd64
+26/09/15 11:23:58 INFO SparkContext: Java version 11.0.24
+26/09/15 11:23:58 INFO ResourceUtils: ==============================================================
+26/09/15 11:23:58 INFO ResourceUtils: No custom resources configured for spark.driver.
+26/09/15 11:23:58 INFO ResourceUtils: ==============================================================
+26/09/15 11:23:58 INFO SparkContext: Submitted application: FinancialFraudDetection
+26/09/15 11:23:58 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+26/09/15 11:23:58 INFO ResourceProfile: Limiting resource is cpu
+26/09/15 11:23:58 INFO ResourceProfileManager: Added ResourceProfile id: 0
+26/09/15 11:23:58 INFO SecurityManager: Changing view acls to: spark
+26/09/15 11:23:58 INFO SecurityManager: Changing modify acls to: spark
+26/09/15 11:23:58 INFO SecurityManager: Changing view acls groups to: 
+26/09/15 11:23:58 INFO SecurityManager: Changing modify acls groups to: 
+26/09/15 11:23:58 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: spark; groups with view permissions: EMPTY; users with modify permissions: spark; groups with modify permissions: EMPTY
+26/09/15 11:23:58 INFO Utils: Successfully started service 'sparkDriver' on port 44395.
+26/09/15 11:23:58 INFO SparkEnv: Registering MapOutputTracker
+26/09/15 11:23:58 INFO SparkEnv: Registering BlockManagerMaster
+26/09/15 11:23:58 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+26/09/15 11:23:58 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+26/09/15 11:23:58 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+26/09/15 11:23:58 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-15df76cf-c85f-434d-929e-5a1f543affb8
+26/09/15 11:23:58 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+26/09/15 11:23:58 INFO SparkEnv: Registering OutputCommitCoordinator
+26/09/15 11:23:58 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+26/09/15 11:23:58 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+26/09/15 11:23:58 INFO SparkContext: Added JAR file:///tmp/.ivy/jars/org.mongodb.spark_mongo-spark-connector_2.12-10.4.0.jar at spark://c962c0012bf7:44395/jars/org.mongodb.spark_mongo-spark-connector_2.12-10.4.0.jar with timestamp 1789471438143
+26/09/15 11:23:58 INFO SparkContext: Added JAR file:///tmp/.ivy/jars/org.mongodb_mongodb-driver-sync-5.1.4.jar at spark://c962c0012bf7:44395/jars/org.mongodb_mongodb-driver-sync-5.1.4.jar with timestamp 1789471438143
+26/09/15 11:23:58 INFO SparkContext: Added JAR file:///tmp/.ivy/jars/org.mongodb_bson-5.1.4.jar at spark://c962c0012bf7:44395/jars/org.mongodb_bson-5.1.4.jar with timestamp 1789471438143
+26/09/15 11:23:58 INFO SparkContext: Added JAR file:///tmp/.ivy/jars/org.mongodb_mongodb-driver-core-5.1.4.jar at spark://c962c0012bf7:44395/jars/org.mongodb_mongodb-driver-core-5.1.4.jar with timestamp 1789471438143
+26/09/15 11:23:58 INFO SparkContext: Added JAR file:///tmp/.ivy/jars/org.mongodb_bson-record-codec-5.1.4.jar at spark://c962c0012bf7:44395/jars/org.mongodb_bson-record-codec-5.1.4.jar with timestamp 1789471438143
+26/09/15 11:23:58 INFO SparkContext: Added file file:///tmp/.ivy/jars/org.mongodb.spark_mongo-spark-connector_2.12-10.4.0.jar at file:///tmp/.ivy/jars/org.mongodb.spark_mongo-spark-connector_2.12-10.4.0.jar with timestamp 1789471438143
+26/09/15 11:23:58 INFO Utils: Copying /tmp/.ivy/jars/org.mongodb.spark_mongo-spark-connector_2.12-10.4.0.jar to /tmp/spark-9505e2d0-aa67-4029-ac91-9104f3206972/userFiles-751a1751-cf12-4903-a719-41d3c17752c6/org.mongodb.spark_mongo-spark-connector_2.12-10.4.0.jar
+26/09/15 11:23:58 INFO SparkContext: Added file file:///tmp/.ivy/jars/org.mongodb_mongodb-driver-sync-5.1.4.jar at file:///tmp/.ivy/jars/org.mongodb_mongodb-driver-sync-5.1.4.jar with timestamp 1789471438143
+26/09/15 11:23:58 INFO Utils: Copying /tmp/.ivy/jars/org.mongodb_mongodb-driver-sync-5.1.4.jar to /tmp/spark-9505e2d0-aa67-4029-ac91-9104f3206972/userFiles-751a1751-cf12-4903-a719-41d3c17752c6/org.mongodb_mongodb-driver-sync-5.1.4.jar
+26/09/15 11:23:58 INFO SparkContext: Added file file:///tmp/.ivy/jars/org.mongodb_bson-5.1.4.jar at file:///tmp/.ivy/jars/org.mongodb_bson-5.1.4.jar with timestamp 1789471438143
+26/09/15 11:23:58 INFO Utils: Copying /tmp/.ivy/jars/org.mongodb_bson-5.1.4.jar to /tmp/spark-9505e2d0-aa67-4029-ac91-9104f3206972/userFiles-751a1751-cf12-4903-a719-41d3c17752c6/org.mongodb_bson-5.1.4.jar
+26/09/15 11:23:59 INFO SparkContext: Added file file:///tmp/.ivy/jars/org.mongodb_mongodb-driver-core-5.1.4.jar at file:///tmp/.ivy/jars/org.mongodb_mongodb-driver-core-5.1.4.jar with timestamp 1789471438143
+26/09/15 11:23:59 INFO Utils: Copying /tmp/.ivy/jars/org.mongodb_mongodb-driver-core-5.1.4.jar to /tmp/spark-9505e2d0-aa67-4029-ac91-9104f3206972/userFiles-751a1751-cf12-4903-a719-41d3c17752c6/org.mongodb_mongodb-driver-core-5.1.4.jar
+26/09/15 11:23:59 INFO SparkContext: Added file file:///tmp/.ivy/jars/org.mongodb_bson-record-codec-5.1.4.jar at file:///tmp/.ivy/jars/org.mongodb_bson-record-codec-5.1.4.jar with timestamp 1789471438143
+26/09/15 11:23:59 INFO Utils: Copying /tmp/.ivy/jars/org.mongodb_bson-record-codec-5.1.4.jar to /tmp/spark-9505e2d0-aa67-4029-ac91-9104f3206972/userFiles-751a1751-cf12-4903-a719-41d3c17752c6/org.mongodb_bson-record-codec-5.1.4.jar
+26/09/15 11:23:59 INFO Executor: Starting executor ID driver on host c962c0012bf7
+26/09/15 11:23:59 INFO Executor: OS info Linux, 6.18.33.2-microsoft-standard-WSL2, amd64
+26/09/15 11:23:59 INFO Executor: Java version 11.0.24
+26/09/15 11:23:59 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+26/09/15 11:23:59 INFO Executor: Created or updated repl class loader org.apache.spark.util.MutableURLClassLoader@5370138a for default.
+26/09/15 11:23:59 INFO Executor: Fetching file:///tmp/.ivy/jars/org.mongodb_bson-5.1.4.jar with timestamp 1789471438143
+26/09/15 11:23:59 INFO Utils: /tmp/.ivy/jars/org.mongodb_bson-5.1.4.jar has been previously copied to /tmp/spark-9505e2d0-aa67-4029-ac91-9104f3206972/userFiles-751a1751-cf12-4903-a719-41d3c17752c6/org.mongodb_bson-5.1.4.jar
+26/09/15 11:23:59 INFO Executor: Fetching file:///tmp/.ivy/jars/org.mongodb_mongodb-driver-sync-5.1.4.jar with timestamp 1789471438143
+26/09/15 11:23:59 INFO Utils: /tmp/.ivy/jars/org.mongodb_mongodb-driver-sync-5.1.4.jar has been previously copied to /tmp/spark-9505e2d0-aa67-4029-ac91-9104f3206972/userFiles-751a1751-cf12-4903-a719-41d3c17752c6/org.mongodb_mongodb-driver-sync-5.1.4.jar
+26/09/15 11:23:59 INFO Executor: Fetching file:///tmp/.ivy/jars/org.mongodb.spark_mongo-spark-connector_2.12-10.4.0.jar with timestamp 1789471438143
+26/09/15 11:23:59 INFO Utils: /tmp/.ivy/jars/org.mongodb.spark_mongo-spark-connector_2.12-10.4.0.jar has been previously copied to /tmp/spark-9505e2d0-aa67-4029-ac91-9104f3206972/userFiles-751a1751-cf12-4903-a719-41d3c17752c6/org.mongodb.spark_mongo-spark-connector_2.12-10.4.0.jar
+26/09/15 11:23:59 INFO Executor: Fetching file:///tmp/.ivy/jars/org.mongodb_bson-record-codec-5.1.4.jar with timestamp 1789471438143
+26/09/15 11:23:59 INFO Utils: /tmp/.ivy/jars/org.mongodb_bson-record-codec-5.1.4.jar has been previously copied to /tmp/spark-9505e2d0-aa67-4029-ac91-9104f3206972/userFiles-751a1751-cf12-4903-a719-41d3c17752c6/org.mongodb_bson-record-codec-5.1.4.jar
+26/09/15 11:23:59 INFO Executor: Fetching file:///tmp/.ivy/jars/org.mongodb_mongodb-driver-core-5.1.4.jar with timestamp 1789471438143
+26/09/15 11:23:59 INFO Utils: /tmp/.ivy/jars/org.mongodb_mongodb-driver-core-5.1.4.jar has been previously copied to /tmp/spark-9505e2d0-aa67-4029-ac91-9104f3206972/userFiles-751a1751-cf12-4903-a719-41d3c17752c6/org.mongodb_mongodb-driver-core-5.1.4.jar
+26/09/15 11:23:59 INFO Executor: Fetching spark://c962c0012bf7:44395/jars/org.mongodb_mongodb-driver-sync-5.1.4.jar with timestamp 1789471438143
+26/09/15 11:23:59 INFO TransportClientFactory: Successfully created connection to c962c0012bf7/172.19.0.3:44395 after 28 ms (0 ms spent in bootstraps)
+26/09/15 11:23:59 INFO Utils: Fetching spark://c962c0012bf7:44395/jars/org.mongodb_mongodb-driver-sync-5.1.4.jar to /tmp/spark-9505e2d0-aa67-4029-ac91-9104f3206972/userFiles-751a1751-cf12-4903-a719-41d3c17752c6/fetchFileTemp5010835891030467342.tmp
+26/09/15 11:23:59 INFO Utils: /tmp/spark-9505e2d0-aa67-4029-ac91-9104f3206972/userFiles-751a1751-cf12-4903-a719-41d3c17752c6/fetchFileTemp5010835891030467342.tmp has been previously copied to /tmp/spark-9505e2d0-aa67-4029-ac91-9104f3206972/userFiles-751a1751-cf12-4903-a719-41d3c17752c6/org.mongodb_mongodb-driver-sync-5.1.4.jar
+26/09/15 11:23:59 INFO Executor: Adding file:/tmp/spark-9505e2d0-aa67-4029-ac91-9104f3206972/userFiles-751a1751-cf12-4903-a719-41d3c17752c6/org.mongodb_mongodb-driver-sync-5.1.4.jar to class loader default
+26/09/15 11:23:59 INFO Executor: Fetching spark://c962c0012bf7:44395/jars/org.mongodb_mongodb-driver-core-5.1.4.jar with timestamp 1789471438143
+26/09/15 11:23:59 INFO Utils: Fetching spark://c962c0012bf7:44395/jars/org.mongodb_mongodb-driver-core-5.1.4.jar to /tmp/spark-9505e2d0-aa67-4029-ac91-9104f3206972/userFiles-751a1751-cf12-4903-a719-41d3c17752c6/fetchFileTemp2987369443200821966.tmp
+26/09/15 11:23:59 INFO Utils: /tmp/spark-9505e2d0-aa67-4029-ac91-9104f3206972/userFiles-751a1751-cf12-4903-a719-41d3c17752c6/fetchFileTemp2987369443200821966.tmp has been previously copied to /tmp/spark-9505e2d0-aa67-4029-ac91-9104f3206972/userFiles-751a1751-cf12-4903-a719-41d3c17752c6/org.mongodb_mongodb-driver-core-5.1.4.jar
+26/09/15 11:23:59 INFO Executor: Adding file:/tmp/spark-9505e2d0-aa67-4029-ac91-9104f3206972/userFiles-751a1751-cf12-4903-a719-41d3c17752c6/org.mongodb_mongodb-driver-core-5.1.4.jar to class loader default
+26/09/15 11:23:59 INFO Executor: Fetching spark://c962c0012bf7:44395/jars/org.mongodb_bson-record-codec-5.1.4.jar with timestamp 1789471438143
+26/09/15 11:23:59 INFO Utils: Fetching spark://c962c0012bf7:44395/jars/org.mongodb_bson-record-codec-5.1.4.jar to /tmp/spark-9505e2d0-aa67-4029-ac91-9104f3206972/userFiles-751a1751-cf12-4903-a719-41d3c17752c6/fetchFileTemp14396003429208247181.tmp
+26/09/15 11:23:59 INFO Utils: /tmp/spark-9505e2d0-aa67-4029-ac91-9104f3206972/userFiles-751a1751-cf12-4903-a719-41d3c17752c6/fetchFileTemp14396003429208247181.tmp has been previously copied to /tmp/spark-9505e2d0-aa67-4029-ac91-9104f3206972/userFiles-751a1751-cf12-4903-a719-41d3c17752c6/org.mongodb_bson-record-codec-5.1.4.jar
+26/09/15 11:23:59 INFO Executor: Adding file:/tmp/spark-9505e2d0-aa67-4029-ac91-9104f3206972/userFiles-751a1751-cf12-4903-a719-41d3c17752c6/org.mongodb_bson-record-codec-5.1.4.jar to class loader default
+26/09/15 11:23:59 INFO Executor: Fetching spark://c962c0012bf7:44395/jars/org.mongodb_bson-5.1.4.jar with timestamp 1789471438143
+26/09/15 11:23:59 INFO Utils: Fetching spark://c962c0012bf7:44395/jars/org.mongodb_bson-5.1.4.jar to /tmp/spark-9505e2d0-aa67-4029-ac91-9104f3206972/userFiles-751a1751-cf12-4903-a719-41d3c17752c6/fetchFileTemp14920995079385061818.tmp
+26/09/15 11:23:59 INFO Utils: /tmp/spark-9505e2d0-aa67-4029-ac91-9104f3206972/userFiles-751a1751-cf12-4903-a719-41d3c17752c6/fetchFileTemp14920995079385061818.tmp has been previously copied to /tmp/spark-9505e2d0-aa67-4029-ac91-9104f3206972/userFiles-751a1751-cf12-4903-a719-41d3c17752c6/org.mongodb_bson-5.1.4.jar
+26/09/15 11:23:59 INFO Executor: Adding file:/tmp/spark-9505e2d0-aa67-4029-ac91-9104f3206972/userFiles-751a1751-cf12-4903-a719-41d3c17752c6/org.mongodb_bson-5.1.4.jar to class loader default
+26/09/15 11:23:59 INFO Executor: Fetching spark://c962c0012bf7:44395/jars/org.mongodb.spark_mongo-spark-connector_2.12-10.4.0.jar with timestamp 1789471438143
+26/09/15 11:23:59 INFO Utils: Fetching spark://c962c0012bf7:44395/jars/org.mongodb.spark_mongo-spark-connector_2.12-10.4.0.jar to /tmp/spark-9505e2d0-aa67-4029-ac91-9104f3206972/userFiles-751a1751-cf12-4903-a719-41d3c17752c6/fetchFileTemp6095021121306412199.tmp
+26/09/15 11:23:59 INFO Utils: /tmp/spark-9505e2d0-aa67-4029-ac91-9104f3206972/userFiles-751a1751-cf12-4903-a719-41d3c17752c6/fetchFileTemp6095021121306412199.tmp has been previously copied to /tmp/spark-9505e2d0-aa67-4029-ac91-9104f3206972/userFiles-751a1751-cf12-4903-a719-41d3c17752c6/org.mongodb.spark_mongo-spark-connector_2.12-10.4.0.jar
+26/09/15 11:23:59 INFO Executor: Adding file:/tmp/spark-9505e2d0-aa67-4029-ac91-9104f3206972/userFiles-751a1751-cf12-4903-a719-41d3c17752c6/org.mongodb.spark_mongo-spark-connector_2.12-10.4.0.jar to class loader default
+26/09/15 11:23:59 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 46163.
+26/09/15 11:23:59 INFO NettyBlockTransferService: Server created on c962c0012bf7:46163
+26/09/15 11:23:59 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+26/09/15 11:23:59 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, c962c0012bf7, 46163, None)
+26/09/15 11:23:59 INFO BlockManagerMasterEndpoint: Registering block manager c962c0012bf7:46163 with 434.4 MiB RAM, BlockManagerId(driver, c962c0012bf7, 46163, None)
+26/09/15 11:23:59 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, c962c0012bf7, 46163, None)
+26/09/15 11:23:59 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, c962c0012bf7, 46163, None)
+26/09/15 11:23:59 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+26/09/15 11:23:59 INFO SharedState: Warehouse path is 'file:/app/spark-warehouse'.
+26/09/15 11:24:00 INFO client: MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|mongo-spark-connector|source", "version": "5.1.4|10.4.0"}, "os": {"type": "Linux", "name": "Linux", "architecture": "amd64", "version": "6.18.33.2-microsoft-standard-WSL2"}, "platform": "Java/Eclipse Adoptium/11.0.24+8|Scala/2.12.18/Spark/3.5.3", "env": {"container": {"runtime": "docker"}}} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@6ad0c857, com.mongodb.Jep395RecordCodecProvider@289b82ed, com.mongodb.KotlinCodecProvider@133512fd]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[mongo:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=UNSPECIFIED, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+26/09/15 11:24:00 INFO cluster: Monitor thread successfully connected to server with description ServerDescription{address=mongo:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=21540599}
+26/09/15 11:24:01 INFO MongoTable: Creating MongoTable: mongo-spark-connector-10.4.0
+26/09/15 11:24:01 INFO V2ScanRelationPushDown: 
+Output: Amount#0, Time#1, V1#2, V10#3, V11#4, V12#5, V13#6, V14#7, V15#8, V16#9, V17#10, V18#11, V19#12, V2#13, V20#14, V21#15, V22#16, V23#17, V24#18, V25#19, V26#20, V27#21, V28#22, V3#23, V4#24, V5#25, V6#26, V7#27, V8#28, V9#29, _id#30, channel#31, country#32, customer_id#33, merchant#34, scenario#35, timestamp#36, transaction_id#37
+         
+26/09/15 11:24:02 INFO Partitioner: Getting collection stats for: fraud_detection.transactions
+26/09/15 11:24:02 INFO client: MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|mongo-spark-connector|source", "version": "5.1.4|10.4.0"}, "os": {"type": "Linux", "name": "Linux", "architecture": "amd64", "version": "6.18.33.2-microsoft-standard-WSL2"}, "platform": "Java/Eclipse Adoptium/11.0.24+8|Scala/2.12.18/Spark/3.5.3", "env": {"container": {"runtime": "docker"}}} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@6ad0c857, com.mongodb.Jep395RecordCodecProvider@289b82ed, com.mongodb.KotlinCodecProvider@133512fd]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[mongo:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=UNSPECIFIED, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+26/09/15 11:24:02 INFO cluster: Monitor thread successfully connected to server with description ServerDescription{address=mongo:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1654905}
+26/09/15 11:24:02 INFO cluster: Waiting for server to become available for operation with ID 6. Remaining time: 30000 ms. Selector: ReadPreferenceServerSelector{readPreference=primary}, topology description: {type=UNKNOWN, servers=[{address=mongo:27017, type=UNKNOWN, state=CONNECTING}].
+26/09/15 11:24:02 INFO Partitioner: Fewer documents (96) than the calculated number of documents per partition (108474.0). Returning a single partition
+26/09/15 11:24:02 INFO Partitioner: Getting collection stats for: fraud_detection.transactions
+26/09/15 11:24:02 INFO Partitioner: Fewer documents (96) than the calculated number of documents per partition (108474.0). Returning a single partition
+26/09/15 11:24:02 INFO CodeGenerator: Code generated in 255.124965 ms
+26/09/15 11:24:02 INFO SparkContext: Starting job: runJob at PythonRDD.scala:181
+26/09/15 11:24:03 INFO DAGScheduler: Got job 0 (runJob at PythonRDD.scala:181) with 1 output partitions
+26/09/15 11:24:03 INFO DAGScheduler: Final stage: ResultStage 0 (runJob at PythonRDD.scala:181)
+26/09/15 11:24:03 INFO DAGScheduler: Parents of final stage: List()
+26/09/15 11:24:03 INFO DAGScheduler: Missing parents: List()
+26/09/15 11:24:03 INFO DAGScheduler: Submitting ResultStage 0 (PythonRDD[6] at RDD at PythonRDD.scala:53), which has no missing parents
+26/09/15 11:24:03 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 82.8 KiB, free 434.3 MiB)
+26/09/15 11:24:03 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 21.0 KiB, free 434.3 MiB)
+26/09/15 11:24:03 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on c962c0012bf7:46163 (size: 21.0 KiB, free: 434.4 MiB)
+26/09/15 11:24:03 INFO SparkContext: Created broadcast 0 from broadcast at DAGScheduler.scala:1585
+26/09/15 11:24:03 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 0 (PythonRDD[6] at RDD at PythonRDD.scala:53) (first 15 tasks are for partitions Vector(0))
+26/09/15 11:24:03 INFO TaskSchedulerImpl: Adding task set 0.0 with 1 tasks resource profile 0
+26/09/15 11:24:03 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) (c962c0012bf7, executor driver, partition 0, PROCESS_LOCAL, 10665 bytes) 
+26/09/15 11:24:03 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+26/09/15 11:24:03 INFO CodeGenerator: Code generated in 43.900361 ms
+26/09/15 11:24:05 INFO CodeGenerator: Code generated in 140.964215 ms
+26/09/15 11:24:05 INFO PythonRunner: Times: total = 1972, boot = 678, init = 1293, finish = 1
+26/09/15 11:24:05 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 2520 bytes result sent to driver
+26/09/15 11:24:05 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 2307 ms on c962c0012bf7 (executor driver) (1/1)
+26/09/15 11:24:05 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+26/09/15 11:24:05 INFO PythonAccumulatorV2: Connected to AccumulatorServer at host: 127.0.0.1 port: 36297
+26/09/15 11:24:05 INFO DAGScheduler: ResultStage 0 (runJob at PythonRDD.scala:181) finished in 2.612 s
+26/09/15 11:24:05 INFO DAGScheduler: Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+26/09/15 11:24:05 INFO TaskSchedulerImpl: Killing all running tasks in stage 0: Stage finished
+26/09/15 11:24:05 INFO DAGScheduler: Job 0 finished: runJob at PythonRDD.scala:181, took 2.659225 s
+26/09/15 11:24:06 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 208.0 B, free 434.3 MiB)
+26/09/15 11:24:06 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 162.2 KiB, free 434.1 MiB)
+26/09/15 11:24:06 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on c962c0012bf7:46163 (size: 162.2 KiB, free: 434.2 MiB)
+26/09/15 11:24:06 INFO SparkContext: Created broadcast 1 from broadcast at <unknown>:0
+26/09/15 11:24:07 INFO MongoTable: Creating MongoTable: mongo-spark-connector-10.4.0
+26/09/15 11:24:07 INFO V2ScanRelationPushDown: 
+Output: Amount#0, Time#1, V1#2, V10#3, V11#4, V12#5, V13#6, V14#7, V15#8, V16#9, V17#10, V18#11, V19#12, V2#13, V20#14, V21#15, V22#16, V23#17, V24#18, V25#19, V26#20, V27#21, V28#22, V3#23, V4#24, V5#25, V6#26, V7#27, V8#28, V9#29, channel#31, country#32, customer_id#33, merchant#34, scenario#35, timestamp#36, transaction_id#37
+         
+26/09/15 11:24:07 INFO Partitioner: Getting collection stats for: fraud_detection.transactions
+26/09/15 11:24:07 INFO Partitioner: Fewer documents (96) than the calculated number of documents per partition (108474.0). Returning a single partition
+26/09/15 11:24:07 INFO Partitioner: Getting collection stats for: fraud_detection.transactions
+26/09/15 11:24:07 INFO Partitioner: Fewer documents (96) than the calculated number of documents per partition (108474.0). Returning a single partition
+26/09/15 11:24:07 WARN SparkStringUtils: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+26/09/15 11:24:07 INFO CodeGenerator: Code generated in 26.677732 ms
+26/09/15 11:24:07 INFO DAGScheduler: Registering RDD 10 (save at <unknown>:0) as input to shuffle 0
+26/09/15 11:24:07 INFO DAGScheduler: Got map stage job 1 (save at <unknown>:0) with 1 output partitions
+26/09/15 11:24:07 INFO DAGScheduler: Final stage: ShuffleMapStage 1 (save at <unknown>:0)
+26/09/15 11:24:07 INFO DAGScheduler: Parents of final stage: List()
+26/09/15 11:24:07 INFO DAGScheduler: Missing parents: List()
+26/09/15 11:24:07 INFO DAGScheduler: Submitting ShuffleMapStage 1 (MapPartitionsRDD[10] at save at <unknown>:0), which has no missing parents
+26/09/15 11:24:07 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 77.9 KiB, free 434.1 MiB)
+26/09/15 11:24:07 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 19.1 KiB, free 434.0 MiB)
+26/09/15 11:24:07 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on c962c0012bf7:46163 (size: 19.1 KiB, free: 434.2 MiB)
+26/09/15 11:24:07 INFO SparkContext: Created broadcast 2 from broadcast at DAGScheduler.scala:1585
+26/09/15 11:24:07 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 1 (MapPartitionsRDD[10] at save at <unknown>:0) (first 15 tasks are for partitions Vector(0))
+26/09/15 11:24:07 INFO TaskSchedulerImpl: Adding task set 1.0 with 1 tasks resource profile 0
+26/09/15 11:24:07 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 1) (c962c0012bf7, executor driver, partition 0, PROCESS_LOCAL, 10645 bytes) 
+26/09/15 11:24:07 INFO Executor: Running task 0.0 in stage 1.0 (TID 1)
+26/09/15 11:24:07 INFO CodeGenerator: Code generated in 22.270045 ms
+26/09/15 11:24:07 INFO CodeGenerator: Code generated in 14.603566 ms
+26/09/15 11:24:08 INFO CodeGenerator: Code generated in 73.010935 ms
+26/09/15 11:24:08 INFO Executor: Finished task 0.0 in stage 1.0 (TID 1). 2032 bytes result sent to driver
+26/09/15 11:24:08 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 1) in 300 ms on c962c0012bf7 (executor driver) (1/1)
+26/09/15 11:24:08 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+26/09/15 11:24:08 INFO DAGScheduler: ShuffleMapStage 1 (save at <unknown>:0) finished in 0.397 s
+26/09/15 11:24:08 INFO DAGScheduler: looking for newly runnable stages
+26/09/15 11:24:08 INFO DAGScheduler: running: Set()
+26/09/15 11:24:08 INFO DAGScheduler: waiting: Set()
+26/09/15 11:24:08 INFO DAGScheduler: failed: Set()
+26/09/15 11:24:08 INFO ShufflePartitionsUtil: For shuffle(0), advisory target size: 67108864, actual target size 1048576, minimum partition size: 1048576
+26/09/15 11:24:08 INFO CodeGenerator: Code generated in 21.360218 ms
+26/09/15 11:24:08 INFO CodeGenerator: Code generated in 14.75422 ms
+26/09/15 11:24:08 INFO CodeGenerator: Code generated in 12.422189 ms
+26/09/15 11:24:08 INFO BlockManagerInfo: Removed broadcast_2_piece0 on c962c0012bf7:46163 in memory (size: 19.1 KiB, free: 434.2 MiB)
+26/09/15 11:24:08 INFO client: MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|mongo-spark-connector|sink", "version": "5.1.4|10.4.0"}, "os": {"type": "Linux", "name": "Linux", "architecture": "amd64", "version": "6.18.33.2-microsoft-standard-WSL2"}, "platform": "Java/Eclipse Adoptium/11.0.24+8|Scala/2.12.18/Spark/3.5.3", "env": {"container": {"runtime": "docker"}}} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@6ad0c857, com.mongodb.Jep395RecordCodecProvider@289b82ed, com.mongodb.KotlinCodecProvider@133512fd]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[mongo:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=UNSPECIFIED, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+26/09/15 11:24:08 INFO cluster: Monitor thread successfully connected to server with description ServerDescription{address=mongo:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1431215}
+26/09/15 11:24:08 INFO OverwriteByExpressionExec: Start processing data source write support: com.mongodb.spark.sql.connector.write.MongoBatchWrite@77fc5a8b. The input RDD has 1 partitions.
+26/09/15 11:24:08 INFO SparkContext: Starting job: save at <unknown>:0
+26/09/15 11:24:08 INFO DAGScheduler: Got job 2 (save at <unknown>:0) with 1 output partitions
+26/09/15 11:24:08 INFO DAGScheduler: Final stage: ResultStage 3 (save at <unknown>:0)
+26/09/15 11:24:08 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 2)
+26/09/15 11:24:08 INFO DAGScheduler: Missing parents: List()
+26/09/15 11:24:08 INFO DAGScheduler: Submitting ResultStage 3 (MapPartitionsRDD[19] at save at <unknown>:0), which has no missing parents
+26/09/15 11:24:08 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 123.6 KiB, free 434.0 MiB)
+26/09/15 11:24:08 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 36.1 KiB, free 434.0 MiB)
+26/09/15 11:24:08 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on c962c0012bf7:46163 (size: 36.1 KiB, free: 434.2 MiB)
+26/09/15 11:24:08 INFO SparkContext: Created broadcast 3 from broadcast at DAGScheduler.scala:1585
+26/09/15 11:24:08 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 3 (MapPartitionsRDD[19] at save at <unknown>:0) (first 15 tasks are for partitions Vector(0))
+26/09/15 11:24:08 INFO TaskSchedulerImpl: Adding task set 3.0 with 1 tasks resource profile 0
+26/09/15 11:24:08 INFO TaskSetManager: Starting task 0.0 in stage 3.0 (TID 2) (c962c0012bf7, executor driver, partition 0, NODE_LOCAL, 9960 bytes) 
+26/09/15 11:24:08 INFO Executor: Running task 0.0 in stage 3.0 (TID 2)
+26/09/15 11:24:08 INFO ShuffleBlockFetcherIterator: Getting 1 (34.7 KiB) non-empty blocks including 1 (34.7 KiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+26/09/15 11:24:08 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 15 ms
+26/09/15 11:24:08 INFO CodeGenerator: Code generated in 12.620424 ms
+26/09/15 11:24:08 INFO CodeGenerator: Code generated in 20.099144 ms
+26/09/15 11:24:08 INFO CodeGenerator: Code generated in 13.621299 ms
+26/09/15 11:24:08 INFO CodeGenerator: Code generated in 21.648537 ms
+26/09/15 11:24:08 INFO CodeGenerator: Code generated in 6.446478 ms
+26/09/15 11:24:08 INFO CodeGenerator: Code generated in 5.413048 ms
+26/09/15 11:24:08 INFO BlockManagerInfo: Removed broadcast_0_piece0 on c962c0012bf7:46163 in memory (size: 21.0 KiB, free: 434.2 MiB)
+26/09/15 11:24:08 INFO CodeGenerator: Code generated in 9.428144 ms
+26/09/15 11:24:08 INFO CodeGenerator: Code generated in 5.836696 ms
+26/09/15 11:24:08 INFO CodeGenerator: Code generated in 5.006162 ms
+26/09/15 11:24:08 INFO CodeGenerator: Code generated in 6.70702 ms
+26/09/15 11:24:08 INFO CodeGenerator: Code generated in 5.997037 ms
+26/09/15 11:24:08 INFO CodeGenerator: Code generated in 5.559026 ms
+26/09/15 11:24:08 INFO CodeGenerator: Code generated in 15.566654 ms
+26/09/15 11:24:09 INFO BaseAllocator: Debug mode disabled.
+26/09/15 11:24:09 INFO DefaultAllocationManagerOption: allocation manager type not specified, using netty as the default type
+26/09/15 11:24:09 INFO CheckAllocator: Using DefaultAllocationManager at memory-netty-12.0.1.jar!/org/apache/arrow/memory/DefaultAllocationManagerFactory.class
+26/09/15 11:24:09 INFO CodeGenerator: Code generated in 15.261145 ms
+26/09/15 11:24:09 INFO CodeGenerator: Code generated in 21.54147 ms
+26/09/15 11:24:09 INFO CodeGenerator: Code generated in 20.002633 ms
+/usr/local/lib/python3.8/dist-packages/xgboost/core.py:265: FutureWarning: Your system has an old version of glibc (< 2.28). We will stop supporting Linux distros with glibc older than 2.28 after **May 31, 2025**. Please upgrade to a recent Linux distro (with glibc 2.28+) to use future versions of XGBoost.
+Note: You have installed the 'manylinux2014' variant of XGBoost. Certain features such as GPU algorithms or federated learning are not available. To use these features, please upgrade to a recent Linux distro with glibc 2.28+, and install the 'manylinux_2_28' variant.
+  warnings.warn(
+26/09/15 11:24:10 ERROR ArrowPythonRunner: Python worker exited unexpectedly (crashed)
+org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+  File "/opt/spark/python/lib/pyspark.zip/pyspark/worker.py", line 1225, in main
+    eval_type = read_int(infile)
+  File "/opt/spark/python/lib/pyspark.zip/pyspark/serializers.py", line 596, in read_int
+    raise EOFError
+EOFError
+
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.handlePythonException(PythonRunner.scala:572)
+	at org.apache.spark.sql.execution.python.PythonArrowOutput$$anon$1.read(PythonArrowOutput.scala:118)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:525)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:491)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage4.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:43)
+	at org.apache.spark.sql.execution.datasources.v2.WritingSparkTask.$anonfun$run$5(WriteToDataSourceV2Exec.scala:446)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1397)
+	at org.apache.spark.sql.execution.datasources.v2.WritingSparkTask.run(WriteToDataSourceV2Exec.scala:491)
+	at org.apache.spark.sql.execution.datasources.v2.WritingSparkTask.run$(WriteToDataSourceV2Exec.scala:430)
+	at org.apache.spark.sql.execution.datasources.v2.DataWritingSparkTask$.run(WriteToDataSourceV2Exec.scala:496)
+	at org.apache.spark.sql.execution.datasources.v2.V2TableWriteExec.$anonfun$writeWithV2$2(WriteToDataSourceV2Exec.scala:393)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+  File "/app/src/fraud_spark_job.py", line 45, in fraud_probability
+    return pd.Series(broadcast_model.value.predict_proba(matrix)[:, 1])
+  File "/usr/local/lib/python3.8/dist-packages/xgboost/sklearn.py", line 1712, in predict_proba
+    class_probs = super().predict(
+  File "/usr/local/lib/python3.8/dist-packages/xgboost/sklearn.py", line 1273, in predict
+    return self.get_booster().predict(
+  File "/usr/local/lib/python3.8/dist-packages/xgboost/core.py", line 2526, in inplace_predict
+    self._validate_features(fns)
+  File "/usr/local/lib/python3.8/dist-packages/xgboost/core.py", line 3091, in _validate_features
+    raise ValueError(msg.format(self.feature_names, feature_names))
+ValueError: feature_names mismatch: ['V1', 'V2', 'V3', 'V4', 'V5', 'V6', 'V7', 'V8', 'V9', 'V10', 'V11', 'V12', 'V13', 'V14', 'V15', 'V16', 'V17', 'V18', 'V19', 'V20', 'V21', 'V22', 'V23', 'V24', 'V25', 'V26', 'V27', 'V28', 'Amount'] ['_0', '_1', '_2', '_3', '_4', '_5', '_6', '_7', '_8', '_9', '_10', '_11', '_12', '_13', '_14', '_15', '_16', '_17', '_18', '_19', '_20', '_21', '_22', '_23', '_24', '_25', '_26', '_27', '_28', '_29']
+expected V14, V11, V26, V16, V19, V3, V23, V20, V2, V4, V7, V21, V10, V1, V13, V24, V8, V18, V15, V12, V17, V22, V25, V9, V6, V5, Amount, V27, V28 in input data
+training data did not have the following fields: _26, _5, _1, _24, _25, _23, _21, _15, _17, _6, _3, _28, _14, _7, _8, _10, _18, _13, _22, _27, _9, _2, _11, _29, _16, _0, _20, _12, _4, _19
+
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.handlePythonException(PythonRunner.scala:572)
+	at org.apache.spark.sql.execution.python.PythonArrowOutput$$anon$1.read(PythonArrowOutput.scala:118)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:525)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:491)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage3.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:43)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.ContextAwareIterator.hasNext(ContextAwareIterator.scala:39)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.execution.python.BatchIterator.hasNext(ArrowEvalPythonExec.scala:38)
+	at org.apache.spark.sql.execution.python.BasicPythonArrowInput.writeIteratorToArrowStream(PythonArrowInput.scala:131)
+	at org.apache.spark.sql.execution.python.BasicPythonArrowInput.writeIteratorToArrowStream$(PythonArrowInput.scala:124)
+	at org.apache.spark.sql.execution.python.ArrowPythonRunner.writeIteratorToArrowStream(ArrowPythonRunner.scala:30)
+	at org.apache.spark.sql.execution.python.PythonArrowInput$$anon$1.$anonfun$writeIteratorToStream$1(PythonArrowInput.scala:96)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.sql.execution.python.PythonArrowInput$$anon$1.writeIteratorToStream(PythonArrowInput.scala:102)
+	at org.apache.spark.api.python.BasePythonRunner$WriterThread.$anonfun$run$1(PythonRunner.scala:451)
+	at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:1928)
+	at org.apache.spark.api.python.BasePythonRunner$WriterThread.run(PythonRunner.scala:282)
+26/09/15 11:24:10 ERROR ArrowPythonRunner: This may have been caused by a prior exception:
+org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+  File "/app/src/fraud_spark_job.py", line 45, in fraud_probability
+    return pd.Series(broadcast_model.value.predict_proba(matrix)[:, 1])
+  File "/usr/local/lib/python3.8/dist-packages/xgboost/sklearn.py", line 1712, in predict_proba
+    class_probs = super().predict(
+  File "/usr/local/lib/python3.8/dist-packages/xgboost/sklearn.py", line 1273, in predict
+    return self.get_booster().predict(
+  File "/usr/local/lib/python3.8/dist-packages/xgboost/core.py", line 2526, in inplace_predict
+    self._validate_features(fns)
+  File "/usr/local/lib/python3.8/dist-packages/xgboost/core.py", line 3091, in _validate_features
+    raise ValueError(msg.format(self.feature_names, feature_names))
+ValueError: feature_names mismatch: ['V1', 'V2', 'V3', 'V4', 'V5', 'V6', 'V7', 'V8', 'V9', 'V10', 'V11', 'V12', 'V13', 'V14', 'V15', 'V16', 'V17', 'V18', 'V19', 'V20', 'V21', 'V22', 'V23', 'V24', 'V25', 'V26', 'V27', 'V28', 'Amount'] ['_0', '_1', '_2', '_3', '_4', '_5', '_6', '_7', '_8', '_9', '_10', '_11', '_12', '_13', '_14', '_15', '_16', '_17', '_18', '_19', '_20', '_21', '_22', '_23', '_24', '_25', '_26', '_27', '_28', '_29']
+expected V14, V11, V26, V16, V19, V3, V23, V20, V2, V4, V7, V21, V10, V1, V13, V24, V8, V18, V15, V12, V17, V22, V25, V9, V6, V5, Amount, V27, V28 in input data
+training data did not have the following fields: _26, _5, _1, _24, _25, _23, _21, _15, _17, _6, _3, _28, _14, _7, _8, _10, _18, _13, _22, _27, _9, _2, _11, _29, _16, _0, _20, _12, _4, _19
+
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.handlePythonException(PythonRunner.scala:572)
+	at org.apache.spark.sql.execution.python.PythonArrowOutput$$anon$1.read(PythonArrowOutput.scala:118)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:525)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:491)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage3.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:43)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.ContextAwareIterator.hasNext(ContextAwareIterator.scala:39)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.execution.python.BatchIterator.hasNext(ArrowEvalPythonExec.scala:38)
+	at org.apache.spark.sql.execution.python.BasicPythonArrowInput.writeIteratorToArrowStream(PythonArrowInput.scala:131)
+	at org.apache.spark.sql.execution.python.BasicPythonArrowInput.writeIteratorToArrowStream$(PythonArrowInput.scala:124)
+	at org.apache.spark.sql.execution.python.ArrowPythonRunner.writeIteratorToArrowStream(ArrowPythonRunner.scala:30)
+	at org.apache.spark.sql.execution.python.PythonArrowInput$$anon$1.$anonfun$writeIteratorToStream$1(PythonArrowInput.scala:96)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.sql.execution.python.PythonArrowInput$$anon$1.writeIteratorToStream(PythonArrowInput.scala:102)
+	at org.apache.spark.api.python.BasePythonRunner$WriterThread.$anonfun$run$1(PythonRunner.scala:451)
+	at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:1928)
+	at org.apache.spark.api.python.BasePythonRunner$WriterThread.run(PythonRunner.scala:282)
+26/09/15 11:24:10 ERROR Utils: Aborting task
+org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+  File "/app/src/fraud_spark_job.py", line 45, in fraud_probability
+    return pd.Series(broadcast_model.value.predict_proba(matrix)[:, 1])
+  File "/usr/local/lib/python3.8/dist-packages/xgboost/sklearn.py", line 1712, in predict_proba
+    class_probs = super().predict(
+  File "/usr/local/lib/python3.8/dist-packages/xgboost/sklearn.py", line 1273, in predict
+    return self.get_booster().predict(
+  File "/usr/local/lib/python3.8/dist-packages/xgboost/core.py", line 2526, in inplace_predict
+    self._validate_features(fns)
+  File "/usr/local/lib/python3.8/dist-packages/xgboost/core.py", line 3091, in _validate_features
+    raise ValueError(msg.format(self.feature_names, feature_names))
+ValueError: feature_names mismatch: ['V1', 'V2', 'V3', 'V4', 'V5', 'V6', 'V7', 'V8', 'V9', 'V10', 'V11', 'V12', 'V13', 'V14', 'V15', 'V16', 'V17', 'V18', 'V19', 'V20', 'V21', 'V22', 'V23', 'V24', 'V25', 'V26', 'V27', 'V28', 'Amount'] ['_0', '_1', '_2', '_3', '_4', '_5', '_6', '_7', '_8', '_9', '_10', '_11', '_12', '_13', '_14', '_15', '_16', '_17', '_18', '_19', '_20', '_21', '_22', '_23', '_24', '_25', '_26', '_27', '_28', '_29']
+expected V14, V11, V26, V16, V19, V3, V23, V20, V2, V4, V7, V21, V10, V1, V13, V24, V8, V18, V15, V12, V17, V22, V25, V9, V6, V5, Amount, V27, V28 in input data
+training data did not have the following fields: _26, _5, _1, _24, _25, _23, _21, _15, _17, _6, _3, _28, _14, _7, _8, _10, _18, _13, _22, _27, _9, _2, _11, _29, _16, _0, _20, _12, _4, _19
+
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.handlePythonException(PythonRunner.scala:572)
+	at org.apache.spark.sql.execution.python.PythonArrowOutput$$anon$1.read(PythonArrowOutput.scala:118)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:525)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:491)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage3.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:43)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.ContextAwareIterator.hasNext(ContextAwareIterator.scala:39)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.execution.python.BatchIterator.hasNext(ArrowEvalPythonExec.scala:38)
+	at org.apache.spark.sql.execution.python.BasicPythonArrowInput.writeIteratorToArrowStream(PythonArrowInput.scala:131)
+	at org.apache.spark.sql.execution.python.BasicPythonArrowInput.writeIteratorToArrowStream$(PythonArrowInput.scala:124)
+	at org.apache.spark.sql.execution.python.ArrowPythonRunner.writeIteratorToArrowStream(ArrowPythonRunner.scala:30)
+	at org.apache.spark.sql.execution.python.PythonArrowInput$$anon$1.$anonfun$writeIteratorToStream$1(PythonArrowInput.scala:96)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.sql.execution.python.PythonArrowInput$$anon$1.writeIteratorToStream(PythonArrowInput.scala:102)
+	at org.apache.spark.api.python.BasePythonRunner$WriterThread.$anonfun$run$1(PythonRunner.scala:451)
+	at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:1928)
+	at org.apache.spark.api.python.BasePythonRunner$WriterThread.run(PythonRunner.scala:282)
+26/09/15 11:24:10 ERROR DataWritingSparkTask: Aborting commit for partition 0 (task 2, attempt 0, stage 3.0)
+26/09/15 11:24:10 WARN Utils: Suppressing exception in catch: Write aborted for: PartitionId: 0, TaskId: 2. Manual data clean up may be required.
+com.mongodb.spark.sql.connector.exceptions.DataException: Write aborted for: PartitionId: 0, TaskId: 2. Manual data clean up may be required.
+	at com.mongodb.spark.sql.connector.write.MongoDataWriter.abort(MongoDataWriter.java:121)
+	at org.apache.spark.sql.execution.datasources.v2.WritingSparkTask.$anonfun$run$10(WriteToDataSourceV2Exec.scala:487)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1408)
+	at org.apache.spark.sql.execution.datasources.v2.WritingSparkTask.run(WriteToDataSourceV2Exec.scala:491)
+	at org.apache.spark.sql.execution.datasources.v2.WritingSparkTask.run$(WriteToDataSourceV2Exec.scala:430)
+	at org.apache.spark.sql.execution.datasources.v2.DataWritingSparkTask$.run(WriteToDataSourceV2Exec.scala:496)
+	at org.apache.spark.sql.execution.datasources.v2.V2TableWriteExec.$anonfun$writeWithV2$2(WriteToDataSourceV2Exec.scala:393)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+26/09/15 11:24:10 ERROR Executor: Exception in task 0.0 in stage 3.0 (TID 2)
+org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+  File "/app/src/fraud_spark_job.py", line 45, in fraud_probability
+    return pd.Series(broadcast_model.value.predict_proba(matrix)[:, 1])
+  File "/usr/local/lib/python3.8/dist-packages/xgboost/sklearn.py", line 1712, in predict_proba
+    class_probs = super().predict(
+  File "/usr/local/lib/python3.8/dist-packages/xgboost/sklearn.py", line 1273, in predict
+    return self.get_booster().predict(
+  File "/usr/local/lib/python3.8/dist-packages/xgboost/core.py", line 2526, in inplace_predict
+    self._validate_features(fns)
+  File "/usr/local/lib/python3.8/dist-packages/xgboost/core.py", line 3091, in _validate_features
+    raise ValueError(msg.format(self.feature_names, feature_names))
+ValueError: feature_names mismatch: ['V1', 'V2', 'V3', 'V4', 'V5', 'V6', 'V7', 'V8', 'V9', 'V10', 'V11', 'V12', 'V13', 'V14', 'V15', 'V16', 'V17', 'V18', 'V19', 'V20', 'V21', 'V22', 'V23', 'V24', 'V25', 'V26', 'V27', 'V28', 'Amount'] ['_0', '_1', '_2', '_3', '_4', '_5', '_6', '_7', '_8', '_9', '_10', '_11', '_12', '_13', '_14', '_15', '_16', '_17', '_18', '_19', '_20', '_21', '_22', '_23', '_24', '_25', '_26', '_27', '_28', '_29']
+expected V14, V11, V26, V16, V19, V3, V23, V20, V2, V4, V7, V21, V10, V1, V13, V24, V8, V18, V15, V12, V17, V22, V25, V9, V6, V5, Amount, V27, V28 in input data
+training data did not have the following fields: _26, _5, _1, _24, _25, _23, _21, _15, _17, _6, _3, _28, _14, _7, _8, _10, _18, _13, _22, _27, _9, _2, _11, _29, _16, _0, _20, _12, _4, _19
+
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.handlePythonException(PythonRunner.scala:572)
+	at org.apache.spark.sql.execution.python.PythonArrowOutput$$anon$1.read(PythonArrowOutput.scala:118)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:525)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:491)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage3.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:43)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.ContextAwareIterator.hasNext(ContextAwareIterator.scala:39)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.execution.python.BatchIterator.hasNext(ArrowEvalPythonExec.scala:38)
+	at org.apache.spark.sql.execution.python.BasicPythonArrowInput.writeIteratorToArrowStream(PythonArrowInput.scala:131)
+	at org.apache.spark.sql.execution.python.BasicPythonArrowInput.writeIteratorToArrowStream$(PythonArrowInput.scala:124)
+	at org.apache.spark.sql.execution.python.ArrowPythonRunner.writeIteratorToArrowStream(ArrowPythonRunner.scala:30)
+	at org.apache.spark.sql.execution.python.PythonArrowInput$$anon$1.$anonfun$writeIteratorToStream$1(PythonArrowInput.scala:96)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.sql.execution.python.PythonArrowInput$$anon$1.writeIteratorToStream(PythonArrowInput.scala:102)
+	at org.apache.spark.api.python.BasePythonRunner$WriterThread.$anonfun$run$1(PythonRunner.scala:451)
+	at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:1928)
+	at org.apache.spark.api.python.BasePythonRunner$WriterThread.run(PythonRunner.scala:282)
+	Suppressed: com.mongodb.spark.sql.connector.exceptions.DataException: Write aborted for: PartitionId: 0, TaskId: 2. Manual data clean up may be required.
+		at com.mongodb.spark.sql.connector.write.MongoDataWriter.abort(MongoDataWriter.java:121)
+		at org.apache.spark.sql.execution.datasources.v2.WritingSparkTask.$anonfun$run$10(WriteToDataSourceV2Exec.scala:487)
+		at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1408)
+		at org.apache.spark.sql.execution.datasources.v2.WritingSparkTask.run(WriteToDataSourceV2Exec.scala:491)
+		at org.apache.spark.sql.execution.datasources.v2.WritingSparkTask.run$(WriteToDataSourceV2Exec.scala:430)
+		at org.apache.spark.sql.execution.datasources.v2.DataWritingSparkTask$.run(WriteToDataSourceV2Exec.scala:496)
+		at org.apache.spark.sql.execution.datasources.v2.V2TableWriteExec.$anonfun$writeWithV2$2(WriteToDataSourceV2Exec.scala:393)
+		at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+		at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+		at org.apache.spark.scheduler.Task.run(Task.scala:141)
+		at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+		at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+		at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+		at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+		at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+		at java.base/java.lang.Thread.run(Unknown Source)
+26/09/15 11:24:10 WARN TaskSetManager: Lost task 0.0 in stage 3.0 (TID 2) (c962c0012bf7 executor driver): org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+  File "/app/src/fraud_spark_job.py", line 45, in fraud_probability
+    return pd.Series(broadcast_model.value.predict_proba(matrix)[:, 1])
+  File "/usr/local/lib/python3.8/dist-packages/xgboost/sklearn.py", line 1712, in predict_proba
+    class_probs = super().predict(
+  File "/usr/local/lib/python3.8/dist-packages/xgboost/sklearn.py", line 1273, in predict
+    return self.get_booster().predict(
+  File "/usr/local/lib/python3.8/dist-packages/xgboost/core.py", line 2526, in inplace_predict
+    self._validate_features(fns)
+  File "/usr/local/lib/python3.8/dist-packages/xgboost/core.py", line 3091, in _validate_features
+    raise ValueError(msg.format(self.feature_names, feature_names))
+ValueError: feature_names mismatch: ['V1', 'V2', 'V3', 'V4', 'V5', 'V6', 'V7', 'V8', 'V9', 'V10', 'V11', 'V12', 'V13', 'V14', 'V15', 'V16', 'V17', 'V18', 'V19', 'V20', 'V21', 'V22', 'V23', 'V24', 'V25', 'V26', 'V27', 'V28', 'Amount'] ['_0', '_1', '_2', '_3', '_4', '_5', '_6', '_7', '_8', '_9', '_10', '_11', '_12', '_13', '_14', '_15', '_16', '_17', '_18', '_19', '_20', '_21', '_22', '_23', '_24', '_25', '_26', '_27', '_28', '_29']
+expected V14, V11, V26, V16, V19, V3, V23, V20, V2, V4, V7, V21, V10, V1, V13, V24, V8, V18, V15, V12, V17, V22, V25, V9, V6, V5, Amount, V27, V28 in input data
+training data did not have the following fields: _26, _5, _1, _24, _25, _23, _21, _15, _17, _6, _3, _28, _14, _7, _8, _10, _18, _13, _22, _27, _9, _2, _11, _29, _16, _0, _20, _12, _4, _19
+
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.handlePythonException(PythonRunner.scala:572)
+	at org.apache.spark.sql.execution.python.PythonArrowOutput$$anon$1.read(PythonArrowOutput.scala:118)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:525)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:491)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage3.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:43)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.ContextAwareIterator.hasNext(ContextAwareIterator.scala:39)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.execution.python.BatchIterator.hasNext(ArrowEvalPythonExec.scala:38)
+	at org.apache.spark.sql.execution.python.BasicPythonArrowInput.writeIteratorToArrowStream(PythonArrowInput.scala:131)
+	at org.apache.spark.sql.execution.python.BasicPythonArrowInput.writeIteratorToArrowStream$(PythonArrowInput.scala:124)
+	at org.apache.spark.sql.execution.python.ArrowPythonRunner.writeIteratorToArrowStream(ArrowPythonRunner.scala:30)
+	at org.apache.spark.sql.execution.python.PythonArrowInput$$anon$1.$anonfun$writeIteratorToStream$1(PythonArrowInput.scala:96)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.sql.execution.python.PythonArrowInput$$anon$1.writeIteratorToStream(PythonArrowInput.scala:102)
+	at org.apache.spark.api.python.BasePythonRunner$WriterThread.$anonfun$run$1(PythonRunner.scala:451)
+	at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:1928)
+	at org.apache.spark.api.python.BasePythonRunner$WriterThread.run(PythonRunner.scala:282)
+	Suppressed: com.mongodb.spark.sql.connector.exceptions.DataException: Write aborted for: PartitionId: 0, TaskId: 2. Manual data clean up may be required.
+		at com.mongodb.spark.sql.connector.write.MongoDataWriter.abort(MongoDataWriter.java:121)
+		at org.apache.spark.sql.execution.datasources.v2.WritingSparkTask.$anonfun$run$10(WriteToDataSourceV2Exec.scala:487)
+		at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1408)
+		at org.apache.spark.sql.execution.datasources.v2.WritingSparkTask.run(WriteToDataSourceV2Exec.scala:491)
+		at org.apache.spark.sql.execution.datasources.v2.WritingSparkTask.run$(WriteToDataSourceV2Exec.scala:430)
+		at org.apache.spark.sql.execution.datasources.v2.DataWritingSparkTask$.run(WriteToDataSourceV2Exec.scala:496)
+		at org.apache.spark.sql.execution.datasources.v2.V2TableWriteExec.$anonfun$writeWithV2$2(WriteToDataSourceV2Exec.scala:393)
+		at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+		at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+		at org.apache.spark.scheduler.Task.run(Task.scala:141)
+		at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+		at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+		at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+		at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+		at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+		at java.base/java.lang.Thread.run(Unknown Source)
+
+26/09/15 11:24:10 ERROR TaskSetManager: Task 0 in stage 3.0 failed 1 times; aborting job
+26/09/15 11:24:10 INFO TaskSchedulerImpl: Removed TaskSet 3.0, whose tasks have all completed, from pool 
+26/09/15 11:24:10 INFO TaskSchedulerImpl: Cancelling stage 3
+26/09/15 11:24:10 INFO TaskSchedulerImpl: Killing all running tasks in stage 3: Stage cancelled: Job aborted due to stage failure: Task 0 in stage 3.0 failed 1 times, most recent failure: Lost task 0.0 in stage 3.0 (TID 2) (c962c0012bf7 executor driver): org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+  File "/app/src/fraud_spark_job.py", line 45, in fraud_probability
+    return pd.Series(broadcast_model.value.predict_proba(matrix)[:, 1])
+  File "/usr/local/lib/python3.8/dist-packages/xgboost/sklearn.py", line 1712, in predict_proba
+    class_probs = super().predict(
+  File "/usr/local/lib/python3.8/dist-packages/xgboost/sklearn.py", line 1273, in predict
+    return self.get_booster().predict(
+  File "/usr/local/lib/python3.8/dist-packages/xgboost/core.py", line 2526, in inplace_predict
+    self._validate_features(fns)
+  File "/usr/local/lib/python3.8/dist-packages/xgboost/core.py", line 3091, in _validate_features
+    raise ValueError(msg.format(self.feature_names, feature_names))
+ValueError: feature_names mismatch: ['V1', 'V2', 'V3', 'V4', 'V5', 'V6', 'V7', 'V8', 'V9', 'V10', 'V11', 'V12', 'V13', 'V14', 'V15', 'V16', 'V17', 'V18', 'V19', 'V20', 'V21', 'V22', 'V23', 'V24', 'V25', 'V26', 'V27', 'V28', 'Amount'] ['_0', '_1', '_2', '_3', '_4', '_5', '_6', '_7', '_8', '_9', '_10', '_11', '_12', '_13', '_14', '_15', '_16', '_17', '_18', '_19', '_20', '_21', '_22', '_23', '_24', '_25', '_26', '_27', '_28', '_29']
+expected V14, V11, V26, V16, V19, V3, V23, V20, V2, V4, V7, V21, V10, V1, V13, V24, V8, V18, V15, V12, V17, V22, V25, V9, V6, V5, Amount, V27, V28 in input data
+training data did not have the following fields: _26, _5, _1, _24, _25, _23, _21, _15, _17, _6, _3, _28, _14, _7, _8, _10, _18, _13, _22, _27, _9, _2, _11, _29, _16, _0, _20, _12, _4, _19
+
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.handlePythonException(PythonRunner.scala:572)
+	at org.apache.spark.sql.execution.python.PythonArrowOutput$$anon$1.read(PythonArrowOutput.scala:118)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:525)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:491)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage3.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:43)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.ContextAwareIterator.hasNext(ContextAwareIterator.scala:39)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.execution.python.BatchIterator.hasNext(ArrowEvalPythonExec.scala:38)
+	at org.apache.spark.sql.execution.python.BasicPythonArrowInput.writeIteratorToArrowStream(PythonArrowInput.scala:131)
+	at org.apache.spark.sql.execution.python.BasicPythonArrowInput.writeIteratorToArrowStream$(PythonArrowInput.scala:124)
+	at org.apache.spark.sql.execution.python.ArrowPythonRunner.writeIteratorToArrowStream(ArrowPythonRunner.scala:30)
+	at org.apache.spark.sql.execution.python.PythonArrowInput$$anon$1.$anonfun$writeIteratorToStream$1(PythonArrowInput.scala:96)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.sql.execution.python.PythonArrowInput$$anon$1.writeIteratorToStream(PythonArrowInput.scala:102)
+	at org.apache.spark.api.python.BasePythonRunner$WriterThread.$anonfun$run$1(PythonRunner.scala:451)
+	at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:1928)
+	at org.apache.spark.api.python.BasePythonRunner$WriterThread.run(PythonRunner.scala:282)
+	Suppressed: com.mongodb.spark.sql.connector.exceptions.DataException: Write aborted for: PartitionId: 0, TaskId: 2. Manual data clean up may be required.
+		at com.mongodb.spark.sql.connector.write.MongoDataWriter.abort(MongoDataWriter.java:121)
+		at org.apache.spark.sql.execution.datasources.v2.WritingSparkTask.$anonfun$run$10(WriteToDataSourceV2Exec.scala:487)
+		at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1408)
+		at org.apache.spark.sql.execution.datasources.v2.WritingSparkTask.run(WriteToDataSourceV2Exec.scala:491)
+		at org.apache.spark.sql.execution.datasources.v2.WritingSparkTask.run$(WriteToDataSourceV2Exec.scala:430)
+		at org.apache.spark.sql.execution.datasources.v2.DataWritingSparkTask$.run(WriteToDataSourceV2Exec.scala:496)
+		at org.apache.spark.sql.execution.datasources.v2.V2TableWriteExec.$anonfun$writeWithV2$2(WriteToDataSourceV2Exec.scala:393)
+		at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+		at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+		at org.apache.spark.scheduler.Task.run(Task.scala:141)
+		at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+		at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+		at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+		at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+		at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+		at java.base/java.lang.Thread.run(Unknown Source)
+
+Driver stacktrace:
+26/09/15 11:24:10 INFO DAGScheduler: ResultStage 3 (save at <unknown>:0) failed in 1.962 s due to Job aborted due to stage failure: Task 0 in stage 3.0 failed 1 times, most recent failure: Lost task 0.0 in stage 3.0 (TID 2) (c962c0012bf7 executor driver): org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+  File "/app/src/fraud_spark_job.py", line 45, in fraud_probability
+    return pd.Series(broadcast_model.value.predict_proba(matrix)[:, 1])
+  File "/usr/local/lib/python3.8/dist-packages/xgboost/sklearn.py", line 1712, in predict_proba
+    class_probs = super().predict(
+  File "/usr/local/lib/python3.8/dist-packages/xgboost/sklearn.py", line 1273, in predict
+    return self.get_booster().predict(
+  File "/usr/local/lib/python3.8/dist-packages/xgboost/core.py", line 2526, in inplace_predict
+    self._validate_features(fns)
+  File "/usr/local/lib/python3.8/dist-packages/xgboost/core.py", line 3091, in _validate_features
+    raise ValueError(msg.format(self.feature_names, feature_names))
+ValueError: feature_names mismatch: ['V1', 'V2', 'V3', 'V4', 'V5', 'V6', 'V7', 'V8', 'V9', 'V10', 'V11', 'V12', 'V13', 'V14', 'V15', 'V16', 'V17', 'V18', 'V19', 'V20', 'V21', 'V22', 'V23', 'V24', 'V25', 'V26', 'V27', 'V28', 'Amount'] ['_0', '_1', '_2', '_3', '_4', '_5', '_6', '_7', '_8', '_9', '_10', '_11', '_12', '_13', '_14', '_15', '_16', '_17', '_18', '_19', '_20', '_21', '_22', '_23', '_24', '_25', '_26', '_27', '_28', '_29']
+expected V14, V11, V26, V16, V19, V3, V23, V20, V2, V4, V7, V21, V10, V1, V13, V24, V8, V18, V15, V12, V17, V22, V25, V9, V6, V5, Amount, V27, V28 in input data
+training data did not have the following fields: _26, _5, _1, _24, _25, _23, _21, _15, _17, _6, _3, _28, _14, _7, _8, _10, _18, _13, _22, _27, _9, _2, _11, _29, _16, _0, _20, _12, _4, _19
+
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.handlePythonException(PythonRunner.scala:572)
+	at org.apache.spark.sql.execution.python.PythonArrowOutput$$anon$1.read(PythonArrowOutput.scala:118)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:525)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:491)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage3.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:43)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.ContextAwareIterator.hasNext(ContextAwareIterator.scala:39)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.execution.python.BatchIterator.hasNext(ArrowEvalPythonExec.scala:38)
+	at org.apache.spark.sql.execution.python.BasicPythonArrowInput.writeIteratorToArrowStream(PythonArrowInput.scala:131)
+	at org.apache.spark.sql.execution.python.BasicPythonArrowInput.writeIteratorToArrowStream$(PythonArrowInput.scala:124)
+	at org.apache.spark.sql.execution.python.ArrowPythonRunner.writeIteratorToArrowStream(ArrowPythonRunner.scala:30)
+	at org.apache.spark.sql.execution.python.PythonArrowInput$$anon$1.$anonfun$writeIteratorToStream$1(PythonArrowInput.scala:96)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.sql.execution.python.PythonArrowInput$$anon$1.writeIteratorToStream(PythonArrowInput.scala:102)
+	at org.apache.spark.api.python.BasePythonRunner$WriterThread.$anonfun$run$1(PythonRunner.scala:451)
+	at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:1928)
+	at org.apache.spark.api.python.BasePythonRunner$WriterThread.run(PythonRunner.scala:282)
+	Suppressed: com.mongodb.spark.sql.connector.exceptions.DataException: Write aborted for: PartitionId: 0, TaskId: 2. Manual data clean up may be required.
+		at com.mongodb.spark.sql.connector.write.MongoDataWriter.abort(MongoDataWriter.java:121)
+		at org.apache.spark.sql.execution.datasources.v2.WritingSparkTask.$anonfun$run$10(WriteToDataSourceV2Exec.scala:487)
+		at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1408)
+		at org.apache.spark.sql.execution.datasources.v2.WritingSparkTask.run(WriteToDataSourceV2Exec.scala:491)
+		at org.apache.spark.sql.execution.datasources.v2.WritingSparkTask.run$(WriteToDataSourceV2Exec.scala:430)
+		at org.apache.spark.sql.execution.datasources.v2.DataWritingSparkTask$.run(WriteToDataSourceV2Exec.scala:496)
+		at org.apache.spark.sql.execution.datasources.v2.V2TableWriteExec.$anonfun$writeWithV2$2(WriteToDataSourceV2Exec.scala:393)
+		at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+		at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+		at org.apache.spark.scheduler.Task.run(Task.scala:141)
+		at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+		at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+		at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+		at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+		at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+		at java.base/java.lang.Thread.run(Unknown Source)
+
+Driver stacktrace:
+26/09/15 11:24:10 INFO DAGScheduler: Job 2 failed: save at <unknown>:0, took 1.984212 s
+26/09/15 11:24:10 ERROR OverwriteByExpressionExec: Data source write support com.mongodb.spark.sql.connector.write.MongoBatchWrite@77fc5a8b is aborting.
+26/09/15 11:24:10 ERROR OverwriteByExpressionExec: Data source write support com.mongodb.spark.sql.connector.write.MongoBatchWrite@77fc5a8b failed to abort.
+26/09/15 11:24:10 INFO BlockManagerInfo: Removed broadcast_3_piece0 on c962c0012bf7:46163 in memory (size: 36.1 KiB, free: 434.2 MiB)
+26/09/15 11:24:11 INFO SparkContext: Invoking stop() from shutdown hook
+26/09/15 11:24:11 INFO SparkContext: SparkContext is stopping with exitCode 0.
+26/09/15 11:24:11 INFO SparkUI: Stopped Spark web UI at http://c962c0012bf7:4040
+26/09/15 11:24:11 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+26/09/15 11:24:11 INFO MemoryStore: MemoryStore cleared
+26/09/15 11:24:11 INFO BlockManager: BlockManager stopped
+26/09/15 11:24:11 INFO BlockManagerMaster: BlockManagerMaster stopped
+26/09/15 11:24:11 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+26/09/15 11:24:11 INFO SparkContext: Successfully stopped SparkContext
+26/09/15 11:24:11 INFO ShutdownHookManager: Shutdown hook called
+26/09/15 11:24:11 INFO ShutdownHookManager: Deleting directory /tmp/spark-04914ea8-9705-4e03-892e-509b8a0186bf
+26/09/15 11:24:11 INFO ShutdownHookManager: Deleting directory /tmp/spark-9505e2d0-aa67-4029-ac91-9104f3206972/pyspark-2412f8fd-117a-4e76-b70f-45fcc481fd11
+26/09/15 11:24:11 INFO ShutdownHookManager: Deleting directory /tmp/spark-9505e2d0-aa67-4029-ac91-9104f3206972
+

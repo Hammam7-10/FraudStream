@@ -1,0 +1,183 @@
+ Container progect-spark-submit-run-1a313861f6f1 Creating 
+ Container progect-spark-submit-run-1a313861f6f1 Created 
+Ivy Default Cache set to: /tmp/.ivy/cache
+The jars for the packages stored in: /tmp/.ivy/jars
+org.mongodb.spark#mongo-spark-connector_2.12 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-33ccf5ae-b94f-42f0-b75d-3bef1b6b6b8e;1.0
+	confs: [default]
+	found org.mongodb.spark#mongo-spark-connector_2.12;10.4.0 in central
+	found org.mongodb#mongodb-driver-sync;5.1.4 in central
+	[5.1.4] org.mongodb#mongodb-driver-sync;[5.1.1,5.1.99)
+	found org.mongodb#bson;5.1.4 in central
+	found org.mongodb#mongodb-driver-core;5.1.4 in central
+	found org.mongodb#bson-record-codec;5.1.4 in central
+downloading https://repo1.maven.org/maven2/org/mongodb/spark/mongo-spark-connector_2.12/10.4.0/mongo-spark-connector_2.12-10.4.0.jar ...
+	[SUCCESSFUL ] org.mongodb.spark#mongo-spark-connector_2.12;10.4.0!mongo-spark-connector_2.12.jar (1054ms)
+downloading https://repo1.maven.org/maven2/org/mongodb/mongodb-driver-sync/5.1.4/mongodb-driver-sync-5.1.4.jar ...
+	[SUCCESSFUL ] org.mongodb#mongodb-driver-sync;5.1.4!mongodb-driver-sync.jar (583ms)
+downloading https://repo1.maven.org/maven2/org/mongodb/bson/5.1.4/bson-5.1.4.jar ...
+	[SUCCESSFUL ] org.mongodb#bson;5.1.4!bson.jar (715ms)
+downloading https://repo1.maven.org/maven2/org/mongodb/mongodb-driver-core/5.1.4/mongodb-driver-core-5.1.4.jar ...
+	[SUCCESSFUL ] org.mongodb#mongodb-driver-core;5.1.4!mongodb-driver-core.jar (1597ms)
+downloading https://repo1.maven.org/maven2/org/mongodb/bson-record-codec/5.1.4/bson-record-codec-5.1.4.jar ...
+	[SUCCESSFUL ] org.mongodb#bson-record-codec;5.1.4!bson-record-codec.jar (603ms)
+:: resolution report :: resolve 14611ms :: artifacts dl 4564ms
+	:: modules in use:
+	org.mongodb#bson;5.1.4 from central in [default]
+	org.mongodb#bson-record-codec;5.1.4 from central in [default]
+	org.mongodb#mongodb-driver-core;5.1.4 from central in [default]
+	org.mongodb#mongodb-driver-sync;5.1.4 from central in [default]
+	org.mongodb.spark#mongo-spark-connector_2.12;10.4.0 from central in [default]
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |   5   |   5   |   5   |   0   ||   5   |   5   |
+	---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-33ccf5ae-b94f-42f0-b75d-3bef1b6b6b8e
+	confs: [default]
+	5 artifacts copied, 0 already retrieved (2522kB/18ms)
+26/09/15 11:21:26 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+26/09/15 11:21:27 INFO SparkContext: Running Spark version 3.5.3
+26/09/15 11:21:27 INFO SparkContext: OS info Linux, 6.18.33.2-microsoft-standard-WSL2, amd64
+26/09/15 11:21:27 INFO SparkContext: Java version 11.0.24
+26/09/15 11:21:27 INFO ResourceUtils: ==============================================================
+26/09/15 11:21:27 INFO ResourceUtils: No custom resources configured for spark.driver.
+26/09/15 11:21:27 INFO ResourceUtils: ==============================================================
+26/09/15 11:21:27 INFO SparkContext: Submitted application: FinancialFraudDetection
+26/09/15 11:21:27 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+26/09/15 11:21:27 INFO ResourceProfile: Limiting resource is cpu
+26/09/15 11:21:27 INFO ResourceProfileManager: Added ResourceProfile id: 0
+26/09/15 11:21:27 INFO SecurityManager: Changing view acls to: spark
+26/09/15 11:21:27 INFO SecurityManager: Changing modify acls to: spark
+26/09/15 11:21:27 INFO SecurityManager: Changing view acls groups to: 
+26/09/15 11:21:27 INFO SecurityManager: Changing modify acls groups to: 
+26/09/15 11:21:27 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: spark; groups with view permissions: EMPTY; users with modify permissions: spark; groups with modify permissions: EMPTY
+26/09/15 11:21:27 INFO Utils: Successfully started service 'sparkDriver' on port 46865.
+26/09/15 11:21:27 INFO SparkEnv: Registering MapOutputTracker
+26/09/15 11:21:27 INFO SparkEnv: Registering BlockManagerMaster
+26/09/15 11:21:27 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+26/09/15 11:21:27 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+26/09/15 11:21:27 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+26/09/15 11:21:27 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-43e2120e-df8f-4eef-8c87-d0dca87c5b48
+26/09/15 11:21:27 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+26/09/15 11:21:27 INFO SparkEnv: Registering OutputCommitCoordinator
+26/09/15 11:21:28 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+26/09/15 11:21:28 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+26/09/15 11:21:28 INFO SparkContext: Added JAR file:///tmp/.ivy/jars/org.mongodb.spark_mongo-spark-connector_2.12-10.4.0.jar at spark://bd150ec038a0:46865/jars/org.mongodb.spark_mongo-spark-connector_2.12-10.4.0.jar with timestamp 1789471287419
+26/09/15 11:21:28 INFO SparkContext: Added JAR file:///tmp/.ivy/jars/org.mongodb_mongodb-driver-sync-5.1.4.jar at spark://bd150ec038a0:46865/jars/org.mongodb_mongodb-driver-sync-5.1.4.jar with timestamp 1789471287419
+26/09/15 11:21:28 INFO SparkContext: Added JAR file:///tmp/.ivy/jars/org.mongodb_bson-5.1.4.jar at spark://bd150ec038a0:46865/jars/org.mongodb_bson-5.1.4.jar with timestamp 1789471287419
+26/09/15 11:21:28 INFO SparkContext: Added JAR file:///tmp/.ivy/jars/org.mongodb_mongodb-driver-core-5.1.4.jar at spark://bd150ec038a0:46865/jars/org.mongodb_mongodb-driver-core-5.1.4.jar with timestamp 1789471287419
+26/09/15 11:21:28 INFO SparkContext: Added JAR file:///tmp/.ivy/jars/org.mongodb_bson-record-codec-5.1.4.jar at spark://bd150ec038a0:46865/jars/org.mongodb_bson-record-codec-5.1.4.jar with timestamp 1789471287419
+26/09/15 11:21:28 INFO SparkContext: Added file file:///tmp/.ivy/jars/org.mongodb.spark_mongo-spark-connector_2.12-10.4.0.jar at file:///tmp/.ivy/jars/org.mongodb.spark_mongo-spark-connector_2.12-10.4.0.jar with timestamp 1789471287419
+26/09/15 11:21:28 INFO Utils: Copying /tmp/.ivy/jars/org.mongodb.spark_mongo-spark-connector_2.12-10.4.0.jar to /tmp/spark-a9fc3578-dec1-432a-8749-5d6ef2041254/userFiles-d1f0322e-c036-4851-919a-cd5847e3b90a/org.mongodb.spark_mongo-spark-connector_2.12-10.4.0.jar
+26/09/15 11:21:28 INFO SparkContext: Added file file:///tmp/.ivy/jars/org.mongodb_mongodb-driver-sync-5.1.4.jar at file:///tmp/.ivy/jars/org.mongodb_mongodb-driver-sync-5.1.4.jar with timestamp 1789471287419
+26/09/15 11:21:28 INFO Utils: Copying /tmp/.ivy/jars/org.mongodb_mongodb-driver-sync-5.1.4.jar to /tmp/spark-a9fc3578-dec1-432a-8749-5d6ef2041254/userFiles-d1f0322e-c036-4851-919a-cd5847e3b90a/org.mongodb_mongodb-driver-sync-5.1.4.jar
+26/09/15 11:21:28 INFO SparkContext: Added file file:///tmp/.ivy/jars/org.mongodb_bson-5.1.4.jar at file:///tmp/.ivy/jars/org.mongodb_bson-5.1.4.jar with timestamp 1789471287419
+26/09/15 11:21:28 INFO Utils: Copying /tmp/.ivy/jars/org.mongodb_bson-5.1.4.jar to /tmp/spark-a9fc3578-dec1-432a-8749-5d6ef2041254/userFiles-d1f0322e-c036-4851-919a-cd5847e3b90a/org.mongodb_bson-5.1.4.jar
+26/09/15 11:21:28 INFO SparkContext: Added file file:///tmp/.ivy/jars/org.mongodb_mongodb-driver-core-5.1.4.jar at file:///tmp/.ivy/jars/org.mongodb_mongodb-driver-core-5.1.4.jar with timestamp 1789471287419
+26/09/15 11:21:28 INFO Utils: Copying /tmp/.ivy/jars/org.mongodb_mongodb-driver-core-5.1.4.jar to /tmp/spark-a9fc3578-dec1-432a-8749-5d6ef2041254/userFiles-d1f0322e-c036-4851-919a-cd5847e3b90a/org.mongodb_mongodb-driver-core-5.1.4.jar
+26/09/15 11:21:28 INFO SparkContext: Added file file:///tmp/.ivy/jars/org.mongodb_bson-record-codec-5.1.4.jar at file:///tmp/.ivy/jars/org.mongodb_bson-record-codec-5.1.4.jar with timestamp 1789471287419
+26/09/15 11:21:28 INFO Utils: Copying /tmp/.ivy/jars/org.mongodb_bson-record-codec-5.1.4.jar to /tmp/spark-a9fc3578-dec1-432a-8749-5d6ef2041254/userFiles-d1f0322e-c036-4851-919a-cd5847e3b90a/org.mongodb_bson-record-codec-5.1.4.jar
+26/09/15 11:21:28 INFO Executor: Starting executor ID driver on host bd150ec038a0
+26/09/15 11:21:28 INFO Executor: OS info Linux, 6.18.33.2-microsoft-standard-WSL2, amd64
+26/09/15 11:21:28 INFO Executor: Java version 11.0.24
+26/09/15 11:21:28 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+26/09/15 11:21:28 INFO Executor: Created or updated repl class loader org.apache.spark.util.MutableURLClassLoader@5df131e3 for default.
+26/09/15 11:21:28 INFO Executor: Fetching file:///tmp/.ivy/jars/org.mongodb_bson-5.1.4.jar with timestamp 1789471287419
+26/09/15 11:21:28 INFO Utils: /tmp/.ivy/jars/org.mongodb_bson-5.1.4.jar has been previously copied to /tmp/spark-a9fc3578-dec1-432a-8749-5d6ef2041254/userFiles-d1f0322e-c036-4851-919a-cd5847e3b90a/org.mongodb_bson-5.1.4.jar
+26/09/15 11:21:28 INFO Executor: Fetching file:///tmp/.ivy/jars/org.mongodb_mongodb-driver-sync-5.1.4.jar with timestamp 1789471287419
+26/09/15 11:21:28 INFO Utils: /tmp/.ivy/jars/org.mongodb_mongodb-driver-sync-5.1.4.jar has been previously copied to /tmp/spark-a9fc3578-dec1-432a-8749-5d6ef2041254/userFiles-d1f0322e-c036-4851-919a-cd5847e3b90a/org.mongodb_mongodb-driver-sync-5.1.4.jar
+26/09/15 11:21:28 INFO Executor: Fetching file:///tmp/.ivy/jars/org.mongodb.spark_mongo-spark-connector_2.12-10.4.0.jar with timestamp 1789471287419
+26/09/15 11:21:28 INFO Utils: /tmp/.ivy/jars/org.mongodb.spark_mongo-spark-connector_2.12-10.4.0.jar has been previously copied to /tmp/spark-a9fc3578-dec1-432a-8749-5d6ef2041254/userFiles-d1f0322e-c036-4851-919a-cd5847e3b90a/org.mongodb.spark_mongo-spark-connector_2.12-10.4.0.jar
+26/09/15 11:21:28 INFO Executor: Fetching file:///tmp/.ivy/jars/org.mongodb_bson-record-codec-5.1.4.jar with timestamp 1789471287419
+26/09/15 11:21:28 INFO Utils: /tmp/.ivy/jars/org.mongodb_bson-record-codec-5.1.4.jar has been previously copied to /tmp/spark-a9fc3578-dec1-432a-8749-5d6ef2041254/userFiles-d1f0322e-c036-4851-919a-cd5847e3b90a/org.mongodb_bson-record-codec-5.1.4.jar
+26/09/15 11:21:28 INFO Executor: Fetching file:///tmp/.ivy/jars/org.mongodb_mongodb-driver-core-5.1.4.jar with timestamp 1789471287419
+26/09/15 11:21:28 INFO Utils: /tmp/.ivy/jars/org.mongodb_mongodb-driver-core-5.1.4.jar has been previously copied to /tmp/spark-a9fc3578-dec1-432a-8749-5d6ef2041254/userFiles-d1f0322e-c036-4851-919a-cd5847e3b90a/org.mongodb_mongodb-driver-core-5.1.4.jar
+26/09/15 11:21:28 INFO Executor: Fetching spark://bd150ec038a0:46865/jars/org.mongodb_mongodb-driver-core-5.1.4.jar with timestamp 1789471287419
+26/09/15 11:21:28 INFO TransportClientFactory: Successfully created connection to bd150ec038a0/172.19.0.3:46865 after 31 ms (0 ms spent in bootstraps)
+26/09/15 11:21:28 INFO Utils: Fetching spark://bd150ec038a0:46865/jars/org.mongodb_mongodb-driver-core-5.1.4.jar to /tmp/spark-a9fc3578-dec1-432a-8749-5d6ef2041254/userFiles-d1f0322e-c036-4851-919a-cd5847e3b90a/fetchFileTemp6990173893168036393.tmp
+26/09/15 11:21:28 INFO Utils: /tmp/spark-a9fc3578-dec1-432a-8749-5d6ef2041254/userFiles-d1f0322e-c036-4851-919a-cd5847e3b90a/fetchFileTemp6990173893168036393.tmp has been previously copied to /tmp/spark-a9fc3578-dec1-432a-8749-5d6ef2041254/userFiles-d1f0322e-c036-4851-919a-cd5847e3b90a/org.mongodb_mongodb-driver-core-5.1.4.jar
+26/09/15 11:21:28 INFO Executor: Adding file:/tmp/spark-a9fc3578-dec1-432a-8749-5d6ef2041254/userFiles-d1f0322e-c036-4851-919a-cd5847e3b90a/org.mongodb_mongodb-driver-core-5.1.4.jar to class loader default
+26/09/15 11:21:28 INFO Executor: Fetching spark://bd150ec038a0:46865/jars/org.mongodb_bson-record-codec-5.1.4.jar with timestamp 1789471287419
+26/09/15 11:21:28 INFO Utils: Fetching spark://bd150ec038a0:46865/jars/org.mongodb_bson-record-codec-5.1.4.jar to /tmp/spark-a9fc3578-dec1-432a-8749-5d6ef2041254/userFiles-d1f0322e-c036-4851-919a-cd5847e3b90a/fetchFileTemp8671124153794503398.tmp
+26/09/15 11:21:28 INFO Utils: /tmp/spark-a9fc3578-dec1-432a-8749-5d6ef2041254/userFiles-d1f0322e-c036-4851-919a-cd5847e3b90a/fetchFileTemp8671124153794503398.tmp has been previously copied to /tmp/spark-a9fc3578-dec1-432a-8749-5d6ef2041254/userFiles-d1f0322e-c036-4851-919a-cd5847e3b90a/org.mongodb_bson-record-codec-5.1.4.jar
+26/09/15 11:21:28 INFO Executor: Adding file:/tmp/spark-a9fc3578-dec1-432a-8749-5d6ef2041254/userFiles-d1f0322e-c036-4851-919a-cd5847e3b90a/org.mongodb_bson-record-codec-5.1.4.jar to class loader default
+26/09/15 11:21:28 INFO Executor: Fetching spark://bd150ec038a0:46865/jars/org.mongodb.spark_mongo-spark-connector_2.12-10.4.0.jar with timestamp 1789471287419
+26/09/15 11:21:28 INFO Utils: Fetching spark://bd150ec038a0:46865/jars/org.mongodb.spark_mongo-spark-connector_2.12-10.4.0.jar to /tmp/spark-a9fc3578-dec1-432a-8749-5d6ef2041254/userFiles-d1f0322e-c036-4851-919a-cd5847e3b90a/fetchFileTemp7616591225160350839.tmp
+26/09/15 11:21:28 INFO Utils: /tmp/spark-a9fc3578-dec1-432a-8749-5d6ef2041254/userFiles-d1f0322e-c036-4851-919a-cd5847e3b90a/fetchFileTemp7616591225160350839.tmp has been previously copied to /tmp/spark-a9fc3578-dec1-432a-8749-5d6ef2041254/userFiles-d1f0322e-c036-4851-919a-cd5847e3b90a/org.mongodb.spark_mongo-spark-connector_2.12-10.4.0.jar
+26/09/15 11:21:28 INFO Executor: Adding file:/tmp/spark-a9fc3578-dec1-432a-8749-5d6ef2041254/userFiles-d1f0322e-c036-4851-919a-cd5847e3b90a/org.mongodb.spark_mongo-spark-connector_2.12-10.4.0.jar to class loader default
+26/09/15 11:21:28 INFO Executor: Fetching spark://bd150ec038a0:46865/jars/org.mongodb_mongodb-driver-sync-5.1.4.jar with timestamp 1789471287419
+26/09/15 11:21:28 INFO Utils: Fetching spark://bd150ec038a0:46865/jars/org.mongodb_mongodb-driver-sync-5.1.4.jar to /tmp/spark-a9fc3578-dec1-432a-8749-5d6ef2041254/userFiles-d1f0322e-c036-4851-919a-cd5847e3b90a/fetchFileTemp3072557037374113835.tmp
+26/09/15 11:21:28 INFO Utils: /tmp/spark-a9fc3578-dec1-432a-8749-5d6ef2041254/userFiles-d1f0322e-c036-4851-919a-cd5847e3b90a/fetchFileTemp3072557037374113835.tmp has been previously copied to /tmp/spark-a9fc3578-dec1-432a-8749-5d6ef2041254/userFiles-d1f0322e-c036-4851-919a-cd5847e3b90a/org.mongodb_mongodb-driver-sync-5.1.4.jar
+26/09/15 11:21:28 INFO Executor: Adding file:/tmp/spark-a9fc3578-dec1-432a-8749-5d6ef2041254/userFiles-d1f0322e-c036-4851-919a-cd5847e3b90a/org.mongodb_mongodb-driver-sync-5.1.4.jar to class loader default
+26/09/15 11:21:28 INFO Executor: Fetching spark://bd150ec038a0:46865/jars/org.mongodb_bson-5.1.4.jar with timestamp 1789471287419
+26/09/15 11:21:28 INFO Utils: Fetching spark://bd150ec038a0:46865/jars/org.mongodb_bson-5.1.4.jar to /tmp/spark-a9fc3578-dec1-432a-8749-5d6ef2041254/userFiles-d1f0322e-c036-4851-919a-cd5847e3b90a/fetchFileTemp16901993783030254786.tmp
+26/09/15 11:21:28 INFO Utils: /tmp/spark-a9fc3578-dec1-432a-8749-5d6ef2041254/userFiles-d1f0322e-c036-4851-919a-cd5847e3b90a/fetchFileTemp16901993783030254786.tmp has been previously copied to /tmp/spark-a9fc3578-dec1-432a-8749-5d6ef2041254/userFiles-d1f0322e-c036-4851-919a-cd5847e3b90a/org.mongodb_bson-5.1.4.jar
+26/09/15 11:21:28 INFO Executor: Adding file:/tmp/spark-a9fc3578-dec1-432a-8749-5d6ef2041254/userFiles-d1f0322e-c036-4851-919a-cd5847e3b90a/org.mongodb_bson-5.1.4.jar to class loader default
+26/09/15 11:21:28 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 40131.
+26/09/15 11:21:28 INFO NettyBlockTransferService: Server created on bd150ec038a0:40131
+26/09/15 11:21:28 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+26/09/15 11:21:28 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, bd150ec038a0, 40131, None)
+26/09/15 11:21:28 INFO BlockManagerMasterEndpoint: Registering block manager bd150ec038a0:40131 with 434.4 MiB RAM, BlockManagerId(driver, bd150ec038a0, 40131, None)
+26/09/15 11:21:28 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, bd150ec038a0, 40131, None)
+26/09/15 11:21:28 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, bd150ec038a0, 40131, None)
+26/09/15 11:21:28 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+26/09/15 11:21:28 INFO SharedState: Warehouse path is 'file:/app/spark-warehouse'.
+26/09/15 11:21:30 INFO client: MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|mongo-spark-connector|source", "version": "5.1.4|10.4.0"}, "os": {"type": "Linux", "name": "Linux", "architecture": "amd64", "version": "6.18.33.2-microsoft-standard-WSL2"}, "platform": "Java/Eclipse Adoptium/11.0.24+8|Scala/2.12.18/Spark/3.5.3", "env": {"container": {"runtime": "docker"}}} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@1ae2f385, com.mongodb.Jep395RecordCodecProvider@5e10c2ef, com.mongodb.KotlinCodecProvider@25c9f432]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[mongo:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=UNSPECIFIED, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+26/09/15 11:21:30 INFO cluster: Monitor thread successfully connected to server with description ServerDescription{address=mongo:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=20117975}
+26/09/15 11:21:30 INFO MongoTable: Creating MongoTable: mongo-spark-connector-10.4.0
+26/09/15 11:21:31 INFO V2ScanRelationPushDown: 
+Output: Amount#0, Time#1, V1#2, V10#3, V11#4, V12#5, V13#6, V14#7, V15#8, V16#9, V17#10, V18#11, V19#12, V2#13, V20#14, V21#15, V22#16, V23#17, V24#18, V25#19, V26#20, V27#21, V28#22, V3#23, V4#24, V5#25, V6#26, V7#27, V8#28, V9#29, _id#30, channel#31, country#32, customer_id#33, merchant#34, scenario#35, timestamp#36, transaction_id#37
+         
+26/09/15 11:21:31 INFO Partitioner: Getting collection stats for: fraud_detection.transactions
+26/09/15 11:21:31 INFO client: MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|mongo-spark-connector|source", "version": "5.1.4|10.4.0"}, "os": {"type": "Linux", "name": "Linux", "architecture": "amd64", "version": "6.18.33.2-microsoft-standard-WSL2"}, "platform": "Java/Eclipse Adoptium/11.0.24+8|Scala/2.12.18/Spark/3.5.3", "env": {"container": {"runtime": "docker"}}} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@1ae2f385, com.mongodb.Jep395RecordCodecProvider@5e10c2ef, com.mongodb.KotlinCodecProvider@25c9f432]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[mongo:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=UNSPECIFIED, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+26/09/15 11:21:31 INFO cluster: Monitor thread successfully connected to server with description ServerDescription{address=mongo:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1213778}
+26/09/15 11:21:31 INFO cluster: Waiting for server to become available for operation with ID 6. Remaining time: 30000 ms. Selector: ReadPreferenceServerSelector{readPreference=primary}, topology description: {type=UNKNOWN, servers=[{address=mongo:27017, type=UNKNOWN, state=CONNECTING}].
+26/09/15 11:21:31 INFO Partitioner: Fewer documents (96) than the calculated number of documents per partition (108474.0). Returning a single partition
+26/09/15 11:21:31 INFO Partitioner: Getting collection stats for: fraud_detection.transactions
+26/09/15 11:21:31 INFO Partitioner: Fewer documents (96) than the calculated number of documents per partition (108474.0). Returning a single partition
+26/09/15 11:21:31 INFO CodeGenerator: Code generated in 212.19557 ms
+26/09/15 11:21:32 INFO SparkContext: Starting job: runJob at PythonRDD.scala:181
+26/09/15 11:21:32 INFO DAGScheduler: Got job 0 (runJob at PythonRDD.scala:181) with 1 output partitions
+26/09/15 11:21:32 INFO DAGScheduler: Final stage: ResultStage 0 (runJob at PythonRDD.scala:181)
+26/09/15 11:21:32 INFO DAGScheduler: Parents of final stage: List()
+26/09/15 11:21:32 INFO DAGScheduler: Missing parents: List()
+26/09/15 11:21:32 INFO DAGScheduler: Submitting ResultStage 0 (PythonRDD[6] at RDD at PythonRDD.scala:53), which has no missing parents
+26/09/15 11:21:32 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 82.8 KiB, free 434.3 MiB)
+26/09/15 11:21:32 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 21.0 KiB, free 434.3 MiB)
+26/09/15 11:21:32 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on bd150ec038a0:40131 (size: 21.0 KiB, free: 434.4 MiB)
+26/09/15 11:21:32 INFO SparkContext: Created broadcast 0 from broadcast at DAGScheduler.scala:1585
+26/09/15 11:21:32 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 0 (PythonRDD[6] at RDD at PythonRDD.scala:53) (first 15 tasks are for partitions Vector(0))
+26/09/15 11:21:32 INFO TaskSchedulerImpl: Adding task set 0.0 with 1 tasks resource profile 0
+26/09/15 11:21:32 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) (bd150ec038a0, executor driver, partition 0, PROCESS_LOCAL, 10665 bytes) 
+26/09/15 11:21:32 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+26/09/15 11:21:32 INFO CodeGenerator: Code generated in 38.917379 ms
+26/09/15 11:21:34 INFO CodeGenerator: Code generated in 159.163725 ms
+26/09/15 11:21:34 INFO PythonRunner: Times: total = 1912, boot = 575, init = 1336, finish = 1
+26/09/15 11:21:34 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 2520 bytes result sent to driver
+26/09/15 11:21:34 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 2217 ms on bd150ec038a0 (executor driver) (1/1)
+26/09/15 11:21:34 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+26/09/15 11:21:34 INFO PythonAccumulatorV2: Connected to AccumulatorServer at host: 127.0.0.1 port: 43789
+26/09/15 11:21:34 INFO DAGScheduler: ResultStage 0 (runJob at PythonRDD.scala:181) finished in 2.621 s
+26/09/15 11:21:34 INFO DAGScheduler: Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+26/09/15 11:21:34 INFO TaskSchedulerImpl: Killing all running tasks in stage 0: Stage finished
+26/09/15 11:21:34 INFO DAGScheduler: Job 0 finished: runJob at PythonRDD.scala:181, took 2.685614 s
+26/09/15 11:21:36 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 208.0 B, free 434.3 MiB)
+26/09/15 11:21:36 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 162.2 KiB, free 434.1 MiB)
+26/09/15 11:21:36 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on bd150ec038a0:40131 (size: 162.2 KiB, free: 434.2 MiB)
+26/09/15 11:21:36 INFO SparkContext: Created broadcast 1 from broadcast at <unknown>:0
+26/09/15 11:21:36 INFO SparkContext: Invoking stop() from shutdown hook
+26/09/15 11:21:36 INFO SparkContext: SparkContext is stopping with exitCode 0.
+26/09/15 11:21:36 INFO SparkUI: Stopped Spark web UI at http://bd150ec038a0:4040
+26/09/15 11:21:36 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+26/09/15 11:21:36 INFO MemoryStore: MemoryStore cleared
+26/09/15 11:21:36 INFO BlockManager: BlockManager stopped
+26/09/15 11:21:36 INFO BlockManagerMaster: BlockManagerMaster stopped
+26/09/15 11:21:36 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+26/09/15 11:21:36 INFO SparkContext: Successfully stopped SparkContext
+26/09/15 11:21:36 INFO ShutdownHookManager: Shutdown hook called
+26/09/15 11:21:36 INFO ShutdownHookManager: Deleting directory /tmp/spark-02911e33-70c7-47b7-8765-548d57160092
+26/09/15 11:21:36 INFO ShutdownHookManager: Deleting directory /tmp/spark-a9fc3578-dec1-432a-8749-5d6ef2041254/pyspark-9a983f0f-391b-4d85-bfc8-02cb2009629a
+26/09/15 11:21:36 INFO ShutdownHookManager: Deleting directory /tmp/spark-a9fc3578-dec1-432a-8749-5d6ef2041254
+

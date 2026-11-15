@@ -1,0 +1,388 @@
+#1 [internal] load local bake definitions
+#1 reading from stdin 505B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 307B 0.0s done
+#2 DONE 0.1s
+
+#3 [internal] load metadata for docker.io/library/python:3.10-slim
+#3 DONE 3.0s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 73B done
+#4 DONE 0.1s
+
+#5 [1/6] FROM docker.io/library/python:3.10-slim@sha256:fd76ade0c607f27677bc04be3c60749f400eedc941d9e72967e19a4cedff80c2
+#5 DONE 0.0s
+
+#6 [internal] load build context
+#6 transferring context: 80.75kB 0.1s done
+#6 DONE 0.2s
+
+#7 [2/6] WORKDIR /app
+#7 CACHED
+
+#8 [3/6] COPY requirements.dashboard.txt .
+#8 DONE 0.3s
+
+#9 [4/6] RUN apt-get update && apt-get install -y --no-install-recommends default-jre-headless && rm -rf /var/lib/apt/lists/*
+#9 2.775 Get:1 http://deb.debian.org/debian trixie InRelease [140 kB]
+#9 5.612 Get:2 http://deb.debian.org/debian trixie-updates InRelease [47.3 kB]
+#9 6.344 Get:3 http://deb.debian.org/debian-security trixie-security InRelease [43.4 kB]
+#9 7.094 Get:4 http://deb.debian.org/debian trixie/main amd64 Packages [9678 kB]
+#9 18.40 Get:5 http://deb.debian.org/debian trixie-updates/main amd64 Packages [4412 B]
+#9 18.99 Get:6 http://deb.debian.org/debian-security trixie-security/main amd64 Packages [261 kB]
+#9 20.15 Fetched 10.2 MB in 19s (532 kB/s)
+#9 20.15 Reading package lists...
+#9 20.71 Reading package lists...
+#9 21.34 Building dependency tree...
+#9 21.49 Reading state information...
+#9 21.68 The following additional packages will be installed:
+#9 21.68   ca-certificates-java java-common libjpeg62-turbo liblcms2-2 libnspr4 libnss3
+#9 21.68   libpcsclite1 openjdk-21-jre-headless
+#9 21.69 Suggested packages:
+#9 21.69   default-jre liblcms2-utils pcscd libnss-mdns fonts-dejavu-extra
+#9 21.69   fonts-ipafont-gothic fonts-ipafont-mincho fonts-wqy-microhei
+#9 21.69   | fonts-wqy-zenhei fonts-indic
+#9 21.69 Recommended packages:
+#9 21.69   libcups2t64 libfontconfig1 libfreetype6 libharfbuzz0b libasound2t64
+#9 21.73 The following NEW packages will be installed:
+#9 21.73   ca-certificates-java default-jre-headless java-common libjpeg62-turbo
+#9 21.73   liblcms2-2 libnspr4 libnss3 libpcsclite1 openjdk-21-jre-headless
+#9 22.95 0 upgraded, 9 newly installed, 0 to remove and 12 not upgraded.
+#9 22.95 Need to get 43.8 MB of archives.
+#9 22.95 After this operation, 210 MB of additional disk space will be used.
+#9 22.95 Get:1 http://deb.debian.org/debian trixie/main amd64 ca-certificates-java all 20240118 [11.6 kB]
+#9 24.31 Get:2 http://deb.debian.org/debian trixie/main amd64 java-common all 0.76 [6776 B]
+#9 25.34 Get:3 http://deb.debian.org/debian trixie/main amd64 liblcms2-2 amd64 2.16-2+deb13u2 [160 kB]
+#9 26.43 Get:4 http://deb.debian.org/debian trixie/main amd64 libjpeg62-turbo amd64 1:2.1.5-4 [168 kB]
+#9 27.44 Get:5 http://deb.debian.org/debian trixie/main amd64 libnspr4 amd64 2:4.36-1 [110 kB]
+#9 27.58 Get:6 http://deb.debian.org/debian trixie/main amd64 libnss3 amd64 2:3.110-1+deb13u4 [1394 kB]
+#9 29.72 Get:7 http://deb.debian.org/debian trixie/main amd64 libpcsclite1 amd64 2.3.3-1 [55.2 kB]
+#9 29.74 Get:8 http://deb.debian.org/debian trixie/main amd64 openjdk-21-jre-headless amd64 21.0.12.1+1-1~deb13u1 [41.9 MB]
+#9 57.77 Get:9 http://deb.debian.org/debian trixie/main amd64 default-jre-headless amd64 2:1.21-76 [3192 B]
+#9 58.40 debconf: unable to initialize frontend: Dialog
+#9 58.40 debconf: (TERM is not set, so the dialog frontend is not usable.)
+#9 58.40 debconf: falling back to frontend: Readline
+#9 58.40 debconf: unable to initialize frontend: Readline
+#9 58.40 debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC entries checked: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.40.1 /usr/local/share/perl/5.40.1 /usr/lib/x86_64-linux-gnu/perl5/5.40 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl-base /usr/lib/x86_64-linux-gnu/perl/5.40 /usr/share/perl/5.40 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 8, <STDIN> line 9.)
+#9 58.40 debconf: falling back to frontend: Teletype
+#9 58.40 debconf: unable to initialize frontend: Teletype
+#9 58.40 debconf: (This frontend requires a controlling tty.)
+#9 58.40 debconf: falling back to frontend: Noninteractive
+#9 59.18 Fetched 43.8 MB in 36s (1216 kB/s)
+#9 59.44 Selecting previously unselected package ca-certificates-java.
+#9 59.44 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 5652 files and directories currently installed.)
+#9 59.59 Preparing to unpack .../0-ca-certificates-java_20240118_all.deb ...
+#9 59.64 Unpacking ca-certificates-java (20240118) ...
+#9 60.10 Selecting previously unselected package java-common.
+#9 60.10 Preparing to unpack .../1-java-common_0.76_all.deb ...
+#9 60.15 Unpacking java-common (0.76) ...
+#9 60.45 Selecting previously unselected package liblcms2-2:amd64.
+#9 60.45 Preparing to unpack .../2-liblcms2-2_2.16-2+deb13u2_amd64.deb ...
+#9 60.53 Unpacking liblcms2-2:amd64 (2.16-2+deb13u2) ...
+#9 60.82 Selecting previously unselected package libjpeg62-turbo:amd64.
+#9 60.82 Preparing to unpack .../3-libjpeg62-turbo_1%3a2.1.5-4_amd64.deb ...
+#9 60.86 Unpacking libjpeg62-turbo:amd64 (1:2.1.5-4) ...
+#9 61.30 Selecting previously unselected package libnspr4:amd64.
+#9 61.30 Preparing to unpack .../4-libnspr4_2%3a4.36-1_amd64.deb ...
+#9 61.34 Unpacking libnspr4:amd64 (2:4.36-1) ...
+#9 61.62 Selecting previously unselected package libnss3:amd64.
+#9 61.62 Preparing to unpack .../5-libnss3_2%3a3.110-1+deb13u4_amd64.deb ...
+#9 61.69 Unpacking libnss3:amd64 (2:3.110-1+deb13u4) ...
+#9 62.04 Selecting previously unselected package libpcsclite1:amd64.
+#9 62.04 Preparing to unpack .../6-libpcsclite1_2.3.3-1_amd64.deb ...
+#9 62.09 Unpacking libpcsclite1:amd64 (2.3.3-1) ...
+#9 62.46 Selecting previously unselected package openjdk-21-jre-headless:amd64.
+#9 62.47 Preparing to unpack .../7-openjdk-21-jre-headless_21.0.12.1+1-1~deb13u1_amd64.deb ...
+#9 62.52 Unpacking openjdk-21-jre-headless:amd64 (21.0.12.1+1-1~deb13u1) ...
+#9 63.84 Selecting previously unselected package default-jre-headless.
+#9 63.84 Preparing to unpack .../8-default-jre-headless_2%3a1.21-76_amd64.deb ...
+#9 63.88 Unpacking default-jre-headless (2:1.21-76) ...
+#9 64.15 Setting up liblcms2-2:amd64 (2.16-2+deb13u2) ...
+#9 64.29 Setting up java-common (0.76) ...
+#9 64.45 Setting up libjpeg62-turbo:amd64 (1:2.1.5-4) ...
+#9 64.58 Setting up libnspr4:amd64 (2:4.36-1) ...
+#9 64.79 Setting up libpcsclite1:amd64 (2.3.3-1) ...
+#9 64.92 Setting up ca-certificates-java (20240118) ...
+#9 65.10 No JRE found. Skipping Java certificates setup.
+#9 65.15 Setting up libnss3:amd64 (2:3.110-1+deb13u4) ...
+#9 65.27 Setting up openjdk-21-jre-headless:amd64 (21.0.12.1+1-1~deb13u1) ...
+#9 66.59 update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/java to provide /usr/bin/java (java) in auto mode
+#9 66.63 update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/jpackage to provide /usr/bin/jpackage (jpackage) in auto mode
+#9 66.66 update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/keytool to provide /usr/bin/keytool (keytool) in auto mode
+#9 66.68 update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/bin/rmiregistry to provide /usr/bin/rmiregistry (rmiregistry) in auto mode
+#9 66.72 update-alternatives: using /usr/lib/jvm/java-21-openjdk-amd64/lib/jexec to provide /usr/bin/jexec (jexec) in auto mode
+#9 66.92 Processing triggers for libc-bin (2.41-12+deb13u3) ...
+#9 67.23 Processing triggers for ca-certificates-java (20240118) ...
+#9 67.89 Adding debian:ACCVRAIZ1.pem
+#9 67.90 Adding debian:AC_RAIZ_FNMT-RCM.pem
+#9 67.92 Adding debian:AC_RAIZ_FNMT-RCM_SERVIDORES_SEGUROS.pem
+#9 67.92 Adding debian:ANF_Secure_Server_Root_CA.pem
+#9 67.93 Adding debian:Actalis_Authentication_Root_CA.pem
+#9 67.93 Adding debian:AffirmTrust_Commercial.pem
+#9 67.94 Adding debian:AffirmTrust_Networking.pem
+#9 67.94 Adding debian:AffirmTrust_Premium.pem
+#9 67.95 Adding debian:AffirmTrust_Premium_ECC.pem
+#9 67.95 Adding debian:Amazon_Root_CA_1.pem
+#9 67.95 Adding debian:Amazon_Root_CA_2.pem
+#9 67.96 Adding debian:Amazon_Root_CA_3.pem
+#9 67.96 Adding debian:Amazon_Root_CA_4.pem
+#9 67.96 Adding debian:Atos_TrustedRoot_2011.pem
+#9 67.97 Adding debian:Atos_TrustedRoot_Root_CA_ECC_TLS_2021.pem
+#9 67.97 Adding debian:Atos_TrustedRoot_Root_CA_RSA_TLS_2021.pem
+#9 67.98 Adding debian:Autoridad_de_Certificacion_Firmaprofesional_CIF_A62634068.pem
+#9 67.98 Adding debian:BJCA_Global_Root_CA1.pem
+#9 67.98 Adding debian:BJCA_Global_Root_CA2.pem
+#9 67.98 Adding debian:Baltimore_CyberTrust_Root.pem
+#9 67.99 Adding debian:Buypass_Class_2_Root_CA.pem
+#9 67.99 Adding debian:Buypass_Class_3_Root_CA.pem
+#9 68.00 Adding debian:CA_Disig_Root_R2.pem
+#9 68.00 Adding debian:CFCA_EV_ROOT.pem
+#9 68.01 Adding debian:COMODO_Certification_Authority.pem
+#9 68.01 Adding debian:COMODO_ECC_Certification_Authority.pem
+#9 68.02 Adding debian:COMODO_RSA_Certification_Authority.pem
+#9 68.02 Adding debian:Certainly_Root_E1.pem
+#9 68.02 Adding debian:Certainly_Root_R1.pem
+#9 68.03 Adding debian:Certigna.pem
+#9 68.03 Adding debian:Certigna_Root_CA.pem
+#9 68.03 Adding debian:Certum_EC-384_CA.pem
+#9 68.04 Adding debian:Certum_Trusted_Network_CA.pem
+#9 68.04 Adding debian:Certum_Trusted_Network_CA_2.pem
+#9 68.05 Adding debian:Certum_Trusted_Root_CA.pem
+#9 68.06 Adding debian:CommScope_Public_Trust_ECC_Root-01.pem
+#9 68.06 Adding debian:CommScope_Public_Trust_ECC_Root-02.pem
+#9 68.06 Adding debian:CommScope_Public_Trust_RSA_Root-01.pem
+#9 68.06 Adding debian:CommScope_Public_Trust_RSA_Root-02.pem
+#9 68.07 Adding debian:Comodo_AAA_Services_root.pem
+#9 68.07 Adding debian:D-TRUST_BR_Root_CA_1_2020.pem
+#9 68.08 Adding debian:D-TRUST_BR_Root_CA_2_2023.pem
+#9 68.08 Adding debian:D-TRUST_EV_Root_CA_1_2020.pem
+#9 68.09 Adding debian:D-TRUST_EV_Root_CA_2_2023.pem
+#9 68.09 Adding debian:D-TRUST_Root_Class_3_CA_2_2009.pem
+#9 68.09 Adding debian:D-TRUST_Root_Class_3_CA_2_EV_2009.pem
+#9 68.09 Adding debian:DigiCert_Assured_ID_Root_CA.pem
+#9 68.10 Adding debian:DigiCert_Assured_ID_Root_G2.pem
+#9 68.11 Adding debian:DigiCert_Assured_ID_Root_G3.pem
+#9 68.12 Adding debian:DigiCert_Global_Root_CA.pem
+#9 68.12 Adding debian:DigiCert_Global_Root_G2.pem
+#9 68.12 Adding debian:DigiCert_Global_Root_G3.pem
+#9 68.13 Adding debian:DigiCert_High_Assurance_EV_Root_CA.pem
+#9 68.14 Adding debian:DigiCert_TLS_ECC_P384_Root_G5.pem
+#9 68.14 Adding debian:DigiCert_TLS_RSA4096_Root_G5.pem
+#9 68.15 Adding debian:DigiCert_Trusted_Root_G4.pem
+#9 68.15 Adding debian:Entrust.net_Premium_2048_Secure_Server_CA.pem
+#9 68.15 Adding debian:Entrust_Root_Certification_Authority.pem
+#9 68.16 Adding debian:Entrust_Root_Certification_Authority_-_EC1.pem
+#9 68.16 Adding debian:Entrust_Root_Certification_Authority_-_G2.pem
+#9 68.16 Adding debian:FIRMAPROFESIONAL_CA_ROOT-A_WEB.pem
+#9 68.17 Adding debian:GDCA_TrustAUTH_R5_ROOT.pem
+#9 68.17 Adding debian:GLOBALTRUST_2020.pem
+#9 68.18 Adding debian:GTS_Root_R1.pem
+#9 68.18 Adding debian:GTS_Root_R2.pem
+#9 68.19 Adding debian:GTS_Root_R3.pem
+#9 68.19 Adding debian:GTS_Root_R4.pem
+#9 68.20 Adding debian:GlobalSign_ECC_Root_CA_-_R4.pem
+#9 68.20 Adding debian:GlobalSign_ECC_Root_CA_-_R5.pem
+#9 68.20 Adding debian:GlobalSign_Root_CA.pem
+#9 68.21 Adding debian:GlobalSign_Root_CA_-_R3.pem
+#9 68.21 Adding debian:GlobalSign_Root_CA_-_R6.pem
+#9 68.22 Adding debian:GlobalSign_Root_E46.pem
+#9 68.23 Adding debian:GlobalSign_Root_R46.pem
+#9 68.23 Adding debian:Go_Daddy_Class_2_CA.pem
+#9 68.24 Adding debian:Go_Daddy_Root_Certificate_Authority_-_G2.pem
+#9 68.24 Adding debian:HARICA_TLS_ECC_Root_CA_2021.pem
+#9 68.24 Adding debian:HARICA_TLS_RSA_Root_CA_2021.pem
+#9 68.25 Adding debian:Hellenic_Academic_and_Research_Institutions_ECC_RootCA_2015.pem
+#9 68.25 Adding debian:Hellenic_Academic_and_Research_Institutions_RootCA_2015.pem
+#9 68.26 Adding debian:HiPKI_Root_CA_-_G1.pem
+#9 68.26 Adding debian:Hongkong_Post_Root_CA_3.pem
+#9 68.27 Adding debian:ISRG_Root_X1.pem
+#9 68.27 Adding debian:ISRG_Root_X2.pem
+#9 68.27 Adding debian:IdenTrust_Commercial_Root_CA_1.pem
+#9 68.28 Adding debian:IdenTrust_Public_Sector_Root_CA_1.pem
+#9 68.28 Adding debian:Izenpe.com.pem
+#9 68.29 Adding debian:Microsec_e-Szigno_Root_CA_2009.pem
+#9 68.30 Adding debian:Microsoft_ECC_Root_Certificate_Authority_2017.pem
+#9 68.30 Adding debian:Microsoft_RSA_Root_Certificate_Authority_2017.pem
+#9 68.31 Adding debian:NAVER_Global_Root_Certification_Authority.pem
+#9 68.31 Adding debian:NetLock_Arany_=Class_Gold=_Főtanúsítvány.pem
+#9 68.32 Adding debian:OISTE_WISeKey_Global_Root_GB_CA.pem
+#9 68.32 Adding debian:OISTE_WISeKey_Global_Root_GC_CA.pem
+#9 68.33 Adding debian:QuoVadis_Root_CA_1_G3.pem
+#9 68.33 Adding debian:QuoVadis_Root_CA_2.pem
+#9 68.33 Adding debian:QuoVadis_Root_CA_2_G3.pem
+#9 68.33 Adding debian:QuoVadis_Root_CA_3.pem
+#9 68.34 Adding debian:QuoVadis_Root_CA_3_G3.pem
+#9 68.35 Adding debian:SSL.com_EV_Root_Certification_Authority_ECC.pem
+#9 68.35 Adding debian:SSL.com_EV_Root_Certification_Authority_RSA_R2.pem
+#9 68.35 Adding debian:SSL.com_Root_Certification_Authority_ECC.pem
+#9 68.36 Adding debian:SSL.com_Root_Certification_Authority_RSA.pem
+#9 68.36 Adding debian:SSL.com_TLS_ECC_Root_CA_2022.pem
+#9 68.37 Adding debian:SSL.com_TLS_RSA_Root_CA_2022.pem
+#9 68.37 Adding debian:SZAFIR_ROOT_CA2.pem
+#9 68.37 Adding debian:Sectigo_Public_Server_Authentication_Root_E46.pem
+#9 68.38 Adding debian:Sectigo_Public_Server_Authentication_Root_R46.pem
+#9 68.39 Adding debian:SecureSign_Root_CA12.pem
+#9 68.39 Adding debian:SecureSign_Root_CA14.pem
+#9 68.39 Adding debian:SecureSign_Root_CA15.pem
+#9 68.39 Adding debian:SecureTrust_CA.pem
+#9 68.40 Adding debian:Secure_Global_CA.pem
+#9 68.40 Adding debian:Security_Communication_ECC_RootCA1.pem
+#9 68.40 Adding debian:Security_Communication_RootCA2.pem
+#9 68.41 Adding debian:Starfield_Class_2_CA.pem
+#9 68.41 Adding debian:Starfield_Root_Certificate_Authority_-_G2.pem
+#9 68.41 Adding debian:Starfield_Services_Root_Certificate_Authority_-_G2.pem
+#9 68.42 Adding debian:SwissSign_Gold_CA_-_G2.pem
+#9 68.43 Adding debian:T-TeleSec_GlobalRoot_Class_2.pem
+#9 68.43 Adding debian:T-TeleSec_GlobalRoot_Class_3.pem
+#9 68.44 Adding debian:TUBITAK_Kamu_SM_SSL_Kok_Sertifikasi_-_Surum_1.pem
+#9 68.45 Adding debian:TWCA_CYBER_Root_CA.pem
+#9 68.45 Adding debian:TWCA_Global_Root_CA.pem
+#9 68.45 Adding debian:TWCA_Root_Certification_Authority.pem
+#9 68.45 Adding debian:Telekom_Security_TLS_ECC_Root_2020.pem
+#9 68.45 Adding debian:Telekom_Security_TLS_RSA_Root_2023.pem
+#9 68.47 Adding debian:TeliaSonera_Root_CA_v1.pem
+#9 68.47 Adding debian:Telia_Root_CA_v2.pem
+#9 68.47 Adding debian:TrustAsia_Global_Root_CA_G3.pem
+#9 68.48 Adding debian:TrustAsia_Global_Root_CA_G4.pem
+#9 68.49 Adding debian:Trustwave_Global_Certification_Authority.pem
+#9 68.49 Adding debian:Trustwave_Global_ECC_P256_Certification_Authority.pem
+#9 68.49 Adding debian:Trustwave_Global_ECC_P384_Certification_Authority.pem
+#9 68.49 Adding debian:TunTrust_Root_CA.pem
+#9 68.49 Adding debian:UCA_Extended_Validation_Root.pem
+#9 68.50 Adding debian:UCA_Global_G2_Root.pem
+#9 68.51 Adding debian:USERTrust_ECC_Certification_Authority.pem
+#9 68.52 Adding debian:USERTrust_RSA_Certification_Authority.pem
+#9 68.52 Adding debian:XRamp_Global_CA_Root.pem
+#9 68.52 Adding debian:certSIGN_ROOT_CA.pem
+#9 68.53 Adding debian:certSIGN_Root_CA_G2.pem
+#9 68.53 Adding debian:e-Szigno_Root_CA_2017.pem
+#9 68.53 Adding debian:ePKI_Root_Certification_Authority.pem
+#9 68.53 Adding debian:emSign_ECC_Root_CA_-_C3.pem
+#9 68.53 Adding debian:emSign_ECC_Root_CA_-_G3.pem
+#9 68.54 Adding debian:emSign_Root_CA_-_C1.pem
+#9 68.54 Adding debian:emSign_Root_CA_-_G1.pem
+#9 68.55 Adding debian:vTrus_ECC_Root_CA.pem
+#9 68.55 Adding debian:vTrus_Root_CA.pem
+#9 68.59 done.
+#9 68.65 Setting up default-jre-headless (2:1.21-76) ...
+#9 DONE 69.9s
+
+#10 [5/6] RUN pip install --no-cache-dir -r requirements.dashboard.txt
+#10 8.268 Collecting fastapi==0.115.6
+#10 10.58   Downloading fastapi-0.115.6-py3-none-any.whl (94 kB)
+#10 11.66      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 94.8/94.8 kB 80.0 kB/s eta 0:00:00
+#10 14.15 Collecting uvicorn[standard]==0.34.0
+#10 15.26   Downloading uvicorn-0.34.0-py3-none-any.whl (62 kB)
+#10 17.18      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.3/62.3 kB 27.4 kB/s eta 0:00:00
+#10 21.37 Collecting pymongo==4.10.1
+#10 21.99   Downloading pymongo-4.10.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.4 MB)
+#10 28.06      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 288.9 kB/s eta 0:00:00
+#10 30.67 Collecting numpy==1.26.4
+#10 31.23   Downloading numpy-1.26.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (18.2 MB)
+#10 67.67      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 18.2/18.2 MB 546.7 kB/s eta 0:00:00
+#10 73.18 Collecting pyspark==3.5.4
+#10 73.77   Downloading pyspark-3.5.4.tar.gz (317.3 MB)
+#10 353.6      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 317.3/317.3 MB 1.4 MB/s eta 0:00:00
+#10 358.4   Preparing metadata (setup.py): started
+#10 359.2   Preparing metadata (setup.py): finished with status 'done'
+#10 361.0 Collecting pandas==2.2.3
+#10 361.6   Downloading pandas-2.2.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (13.1 MB)
+#10 543.4      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.1/13.1 MB 118.8 kB/s eta 0:00:00
+#10 544.1 Collecting scikit-learn==1.6.1
+#10 544.7   Downloading scikit_learn-1.6.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (13.5 MB)
+#10 584.4      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.5/13.5 MB 389.5 kB/s eta 0:00:00
+#10 585.0 Collecting xgboost==2.1.4
+#10 585.6   Downloading xgboost-2.1.4-py3-none-manylinux_2_28_x86_64.whl (223.6 MB)
+#10 785.5      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 223.6/223.6 MB 1.1 MB/s eta 0:00:00
+#10 786.6 Collecting pyarrow==15.0.2
+#10 787.2   Downloading pyarrow-15.0.2-cp310-cp310-manylinux_2_28_x86_64.whl (38.3 MB)
+#10 826.0      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 38.3/38.3 MB 1.1 MB/s eta 0:00:00
+#10 826.5 Collecting typing-extensions>=4.8.0
+#10 827.1   Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+#10 830.9      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.6/45.6 kB 9.2 kB/s eta 0:00:00
+#10 831.3 Collecting starlette<0.42.0,>=0.40.0
+#10 832.4   Downloading starlette-0.41.3-py3-none-any.whl (73 kB)
+#10 832.4      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 73.2/73.2 kB 3.1 MB/s eta 0:00:00
+#10 833.2 Collecting pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4
+#10 834.4   Downloading pydantic-2.13.5-py3-none-any.whl (472 kB)
+#10 838.1      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 472.6/472.6 kB 125.4 kB/s eta 0:00:00
+#10 838.5 Collecting h11>=0.8
+#10 839.0   Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+#10 839.8 Collecting click>=7.0
+#10 840.4   Downloading click-8.5.0-py3-none-any.whl (125 kB)
+#10 841.2      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 125.3/125.3 kB 1.1 MB/s eta 0:00:00
+#10 842.0 Collecting uvloop!=0.15.0,!=0.15.1,>=0.14.0
+#10 843.2   Downloading uvloop-0.22.1-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (3.7 MB)
+#10 867.4      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.7/3.7 MB 152.7 kB/s eta 0:00:00
+#10 867.8 Collecting httptools>=0.6.3
+#10 868.4   Downloading httptools-0.8.0-cp310-cp310-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (450 kB)
+#10 870.8      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 450.0/450.0 kB 343.2 kB/s eta 0:00:00
+#10 871.6 Collecting pyyaml>=5.1
+#10 872.2   Downloading pyyaml-6.0.3-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (770 kB)
+#10 876.0      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 770.3/770.3 kB 286.2 kB/s eta 0:00:00
+#10 876.4 Collecting python-dotenv>=0.13
+#10 877.1   Downloading python_dotenv-1.2.3-py3-none-any.whl (22 kB)
+#10 878.0 Collecting websockets>=10.4
+#10 879.1   Downloading websockets-16.1.1-cp310-cp310-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (186 kB)
+#10 881.0      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 186.0/186.0 kB 91.3 kB/s eta 0:00:00
+#10 881.9 Collecting watchfiles>=0.13
+#10 882.4   Downloading watchfiles-1.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (457 kB)
+#10 885.0      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 457.1/457.1 kB 178.6 kB/s eta 0:00:00
+#10 885.3 Collecting dnspython<3.0.0,>=1.16.0
+#10 885.9   Downloading dnspython-2.8.0-py3-none-any.whl (331 kB)
+#10 887.7      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 331.1/331.1 kB 436.4 kB/s eta 0:00:00
+#10 888.0 Collecting py4j==0.10.9.7
+#10 889.2   Downloading py4j-0.10.9.7-py2.py3-none-any.whl (200 kB)
+#10 890.3      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 200.5/200.5 kB 173.8 kB/s eta 0:00:00
+#10 890.7 Collecting pytz>=2020.1
+#10 891.3   Downloading pytz-2026.3.post1-py2.py3-none-any.whl (508 kB)
+#10 894.3      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 508.3/508.3 kB 215.6 kB/s eta 0:00:00
+#10 894.7 Collecting python-dateutil>=2.8.2
+#10 895.4   Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+#10 897.1      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 229.9/229.9 kB 123.6 kB/s eta 0:00:00
+#10 897.4 Collecting tzdata>=2022.7
+#10 898.0   Downloading tzdata-2026.4-py2.py3-none-any.whl (347 kB)
+#10 899.9      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 347.5/347.5 kB 277.3 kB/s eta 0:00:00
+#10 900.4 Collecting joblib>=1.2.0
+#10 901.5   Downloading joblib-1.6.0-py3-none-any.whl (306 kB)
+#10 904.7      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 306.1/306.1 kB 95.0 kB/s eta 0:00:00
+#10 905.9 Collecting scipy>=1.6.0
+#10 906.6   Downloading scipy-1.15.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (37.7 MB)
+#10 997.7      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 37.7/37.7 MB 564.5 kB/s eta 0:00:00
+#10 998.2 Collecting threadpoolctl>=3.1.0
+#10 998.8   Downloading threadpoolctl-3.6.0-py3-none-any.whl (18 kB)
+#10 999.5 Collecting nvidia-nccl-cu12
+#10 1000.1   Downloading nvidia_nccl_cu12-2.31.2-py3-none-manylinux_2_18_x86_64.whl (342.1 MB)
+#10 1293.0      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 342.1/342.1 MB 1.9 MB/s eta 0:00:00
+#10 1295.6 Collecting cloudpickle>=3.0
+#10 1296.2   Downloading cloudpickle-3.1.2-py3-none-any.whl (22 kB)
+#10 1296.7 Collecting annotated-types>=0.6.0
+#10 1299.4   Downloading annotated_types-0.8.0-py3-none-any.whl (13 kB)
+#10 1305.8 Collecting pydantic-core==2.46.5
+#10 1306.9   Downloading pydantic_core-2.46.5-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.1 MB)
+#10 1308.1      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 1.8 MB/s eta 0:00:00
+#10 1308.7 Collecting typing-inspection>=0.4.2
+#10 1309.2   Downloading typing_inspection-0.4.4-py3-none-any.whl (14 kB)
+#10 1309.8 Collecting six>=1.5
+#10 1310.4   Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+#10 1311.1 Collecting anyio<5,>=3.4.0
+#10 1311.7   Downloading anyio-4.15.1-py3-none-any.whl (132 kB)
+#10 1311.8      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.1/132.1 kB 1.1 MB/s eta 0:00:00
+#10 1314.1 Collecting exceptiongroup>=1.0.2
+#10 1314.7   Downloading exceptiongroup-1.3.1-py3-none-any.whl (16 kB)
+#10 1315.3 Collecting idna>=2.8
+#10 1315.8   Downloading idna-3.19-py3-none-any.whl (68 kB)
+#10 1315.9      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 68.5/68.5 kB 639.1 kB/s eta 0:00:00
+#10 1316.0 Building wheels for collected packages: pyspark
+#10 1316.0   Building wheel for pyspark (setup.py): started
+#10 1327.0   Building wheel for pyspark (setup.py): finished with status 'done'
+#10 1327.3   Created wheel for pyspark: filename=pyspark-3.5.4-py2.py3-none-any.whl size=317849829 sha256=cd8aa567d7dd645a4904ca049876a7cb3266d8e7e74ae58b56c4103d4093aa59
+#10 1327.3   Stored in directory: /tmp/pip-ephem-wheel-cache-qd5t0oo0/wheels/d9/1c/98/31e395a42d1735d18d42124971ecbbade844b50bb9845b6f4a
+#10 1327.3 Successfully built pyspark
+#10 1327.6 Installing collected packages: pytz, py4j, websockets, uvloop, tzdata, typing-extensions, threadpoolctl, six, pyyaml, python-dotenv, pyspark, nvidia-nccl-cu12, numpy, idna, httptools, h11, dnspython, cloudpickle, click, annotated-types, uvicorn, typing-inspection, scipy, python-dateutil, pymongo, pydantic-core, pyarrow, joblib, exceptiongroup, xgboost, scikit-learn, pydantic, pandas, anyio, watchfiles, starlette, fastapi

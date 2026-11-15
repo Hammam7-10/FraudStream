@@ -1,0 +1,172 @@
+#1 [internal] load local bake definitions
+#1 reading from stdin 505B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 190B done
+#2 DONE 0.1s
+
+#3 [internal] load metadata for docker.io/library/python:3.10-slim
+#3 DONE 12.8s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 73B done
+#4 DONE 0.1s
+
+#5 [1/5] FROM docker.io/library/python:3.10-slim@sha256:fd76ade0c607f27677bc04be3c60749f400eedc941d9e72967e19a4cedff80c2
+#5 resolve docker.io/library/python:3.10-slim@sha256:fd76ade0c607f27677bc04be3c60749f400eedc941d9e72967e19a4cedff80c2
+#5 ...
+
+#6 [internal] load build context
+#6 transferring context: 539.97kB 0.1s done
+#6 DONE 0.2s
+
+#5 [1/5] FROM docker.io/library/python:3.10-slim@sha256:fd76ade0c607f27677bc04be3c60749f400eedc941d9e72967e19a4cedff80c2
+#5 resolve docker.io/library/python:3.10-slim@sha256:fd76ade0c607f27677bc04be3c60749f400eedc941d9e72967e19a4cedff80c2 0.1s done
+#5 sha256:db825c749364f7f06c8fb165b360d9de94ba5c14727e2e446c1b4202a30224e7 5.49kB / 5.49kB done
+#5 sha256:fd76ade0c607f27677bc04be3c60749f400eedc941d9e72967e19a4cedff80c2 10.37kB / 10.37kB done
+#5 sha256:8c97ebedc32fd60935cdf5992e935753e2a0f98231830028050e1e04bd3c13c2 1.75kB / 1.75kB done
+#5 sha256:6310eb16bf4251731feab01e8f633bf5e2d75a657ccad97f420b1f83cce457be 0B / 29.79MB 78.8s
+#5 sha256:6310eb16bf4251731feab01e8f633bf5e2d75a657ccad97f420b1f83cce457be 0B / 29.79MB 84.0s
+#5 sha256:6310eb16bf4251731feab01e8f633bf5e2d75a657ccad97f420b1f83cce457be 0B / 29.79MB 89.2s
+#5 sha256:6310eb16bf4251731feab01e8f633bf5e2d75a657ccad97f420b1f83cce457be 0B / 29.79MB 94.2s
+#5 sha256:6310eb16bf4251731feab01e8f633bf5e2d75a657ccad97f420b1f83cce457be 0B / 29.79MB 99.3s
+#5 sha256:6310eb16bf4251731feab01e8f633bf5e2d75a657ccad97f420b1f83cce457be 1.05MB / 29.79MB 104.4s
+#5 sha256:6310eb16bf4251731feab01e8f633bf5e2d75a657ccad97f420b1f83cce457be 1.05MB / 29.79MB 109.4s
+#5 sha256:6310eb16bf4251731feab01e8f633bf5e2d75a657ccad97f420b1f83cce457be 2.10MB / 29.79MB 114.5s
+#5 sha256:6310eb16bf4251731feab01e8f633bf5e2d75a657ccad97f420b1f83cce457be 2.10MB / 29.79MB 119.5s
+#5 sha256:6310eb16bf4251731feab01e8f633bf5e2d75a657ccad97f420b1f83cce457be 3.15MB / 29.79MB 124.6s
+#5 sha256:6310eb16bf4251731feab01e8f633bf5e2d75a657ccad97f420b1f83cce457be 4.19MB / 29.79MB 129.7s
+#5 sha256:6310eb16bf4251731feab01e8f633bf5e2d75a657ccad97f420b1f83cce457be 6.29MB / 29.79MB 134.2s
+#5 sha256:6310eb16bf4251731feab01e8f633bf5e2d75a657ccad97f420b1f83cce457be 7.34MB / 29.79MB 139.3s
+#5 sha256:6310eb16bf4251731feab01e8f633bf5e2d75a657ccad97f420b1f83cce457be 9.44MB / 29.79MB 142.5s
+#5 sha256:6310eb16bf4251731feab01e8f633bf5e2d75a657ccad97f420b1f83cce457be 10.49MB / 29.79MB 147.6s
+#5 sha256:6310eb16bf4251731feab01e8f633bf5e2d75a657ccad97f420b1f83cce457be 12.58MB / 29.79MB 151.5s
+#5 sha256:4bfad29f0e4c54033a1172e7cd01a051cef0fd435105fde568297cccc948e3cc 0B / 4.27MB 155.0s
+#5 sha256:6310eb16bf4251731feab01e8f633bf5e2d75a657ccad97f420b1f83cce457be 13.63MB / 29.79MB 156.6s
+#5 sha256:6310eb16bf4251731feab01e8f633bf5e2d75a657ccad97f420b1f83cce457be 15.73MB / 29.79MB 159.3s
+#5 sha256:4bfad29f0e4c54033a1172e7cd01a051cef0fd435105fde568297cccc948e3cc 0B / 4.27MB 160.1s
+#5 sha256:4bfad29f0e4c54033a1172e7cd01a051cef0fd435105fde568297cccc948e3cc 1.05MB / 4.27MB 161.4s
+#5 sha256:6310eb16bf4251731feab01e8f633bf5e2d75a657ccad97f420b1f83cce457be 17.83MB / 29.79MB 163.1s
+#5 sha256:4bfad29f0e4c54033a1172e7cd01a051cef0fd435105fde568297cccc948e3cc 2.10MB / 4.27MB 163.1s
+#5 sha256:4bfad29f0e4c54033a1172e7cd01a051cef0fd435105fde568297cccc948e3cc 3.15MB / 4.27MB 164.4s
+#5 sha256:4bfad29f0e4c54033a1172e7cd01a051cef0fd435105fde568297cccc948e3cc 4.19MB / 4.27MB 165.3s
+#5 sha256:4bfad29f0e4c54033a1172e7cd01a051cef0fd435105fde568297cccc948e3cc 4.27MB / 4.27MB 165.3s done
+#5 sha256:33fd700e5760ffc8c4f8306b7e77aeb159d838d54c855d673df9e81a8ac3f620 0B / 13.91MB 165.5s
+#5 sha256:6310eb16bf4251731feab01e8f633bf5e2d75a657ccad97f420b1f83cce457be 19.92MB / 29.79MB 167.5s
+#5 sha256:33fd700e5760ffc8c4f8306b7e77aeb159d838d54c855d673df9e81a8ac3f620 1.05MB / 13.91MB 167.5s
+#5 sha256:33fd700e5760ffc8c4f8306b7e77aeb159d838d54c855d673df9e81a8ac3f620 2.10MB / 13.91MB 168.6s
+#5 sha256:33fd700e5760ffc8c4f8306b7e77aeb159d838d54c855d673df9e81a8ac3f620 3.15MB / 13.91MB 169.7s
+#5 sha256:33fd700e5760ffc8c4f8306b7e77aeb159d838d54c855d673df9e81a8ac3f620 4.19MB / 13.91MB 170.6s
+#5 sha256:33fd700e5760ffc8c4f8306b7e77aeb159d838d54c855d673df9e81a8ac3f620 5.24MB / 13.91MB 171.5s
+#5 sha256:6310eb16bf4251731feab01e8f633bf5e2d75a657ccad97f420b1f83cce457be 22.02MB / 29.79MB 171.8s
+#5 sha256:33fd700e5760ffc8c4f8306b7e77aeb159d838d54c855d673df9e81a8ac3f620 6.29MB / 13.91MB 172.6s
+#5 sha256:33fd700e5760ffc8c4f8306b7e77aeb159d838d54c855d673df9e81a8ac3f620 7.34MB / 13.91MB 173.6s
+#5 sha256:33fd700e5760ffc8c4f8306b7e77aeb159d838d54c855d673df9e81a8ac3f620 8.39MB / 13.91MB 174.8s
+#5 sha256:33fd700e5760ffc8c4f8306b7e77aeb159d838d54c855d673df9e81a8ac3f620 9.44MB / 13.91MB 176.3s
+#5 sha256:6310eb16bf4251731feab01e8f633bf5e2d75a657ccad97f420b1f83cce457be 24.12MB / 29.79MB 177.0s
+#5 sha256:33fd700e5760ffc8c4f8306b7e77aeb159d838d54c855d673df9e81a8ac3f620 10.49MB / 13.91MB 177.7s
+#5 sha256:6310eb16bf4251731feab01e8f633bf5e2d75a657ccad97f420b1f83cce457be 26.21MB / 29.79MB 180.3s
+#5 sha256:33fd700e5760ffc8c4f8306b7e77aeb159d838d54c855d673df9e81a8ac3f620 11.53MB / 13.91MB 180.3s
+#5 sha256:33fd700e5760ffc8c4f8306b7e77aeb159d838d54c855d673df9e81a8ac3f620 12.58MB / 13.91MB 182.7s
+#5 sha256:6310eb16bf4251731feab01e8f633bf5e2d75a657ccad97f420b1f83cce457be 28.31MB / 29.79MB 183.2s
+#5 sha256:6310eb16bf4251731feab01e8f633bf5e2d75a657ccad97f420b1f83cce457be 29.79MB / 29.79MB 184.8s done
+#5 extracting sha256:6310eb16bf4251731feab01e8f633bf5e2d75a657ccad97f420b1f83cce457be 0.1s
+#5 sha256:9feb9947eea2d4a7b84504a6ef5ba25f1f86ec5626260c269297140f777beaa0 0B / 250B 185.0s
+#5 sha256:33fd700e5760ffc8c4f8306b7e77aeb159d838d54c855d673df9e81a8ac3f620 13.63MB / 13.91MB 185.7s
+#5 sha256:9feb9947eea2d4a7b84504a6ef5ba25f1f86ec5626260c269297140f777beaa0 250B / 250B 185.8s done
+#5 sha256:33fd700e5760ffc8c4f8306b7e77aeb159d838d54c855d673df9e81a8ac3f620 13.91MB / 13.91MB 186.2s done
+#5 extracting sha256:6310eb16bf4251731feab01e8f633bf5e2d75a657ccad97f420b1f83cce457be 1.6s done
+#5 extracting sha256:4bfad29f0e4c54033a1172e7cd01a051cef0fd435105fde568297cccc948e3cc 0.1s
+#5 extracting sha256:4bfad29f0e4c54033a1172e7cd01a051cef0fd435105fde568297cccc948e3cc 0.2s done
+#5 extracting sha256:33fd700e5760ffc8c4f8306b7e77aeb159d838d54c855d673df9e81a8ac3f620 0.1s
+#5 extracting sha256:33fd700e5760ffc8c4f8306b7e77aeb159d838d54c855d673df9e81a8ac3f620 1.3s done
+#5 extracting sha256:9feb9947eea2d4a7b84504a6ef5ba25f1f86ec5626260c269297140f777beaa0
+#5 extracting sha256:9feb9947eea2d4a7b84504a6ef5ba25f1f86ec5626260c269297140f777beaa0 done
+#5 DONE 188.8s
+
+#7 [2/5] WORKDIR /app
+#7 DONE 0.3s
+
+#8 [3/5] COPY requirements.dashboard.txt .
+#8 DONE 0.1s
+
+#9 [4/5] RUN pip install --no-cache-dir -r requirements.dashboard.txt
+#9 6.456 Collecting fastapi==0.115.6
+#9 14.15   Downloading fastapi-0.115.6-py3-none-any.whl (94 kB)
+#9 15.72      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 94.8/94.8 kB 184.2 kB/s eta 0:00:00
+#9 16.39 Collecting uvicorn[standard]==0.34.0
+#9 16.74   Downloading uvicorn-0.34.0-py3-none-any.whl (62 kB)
+#9 17.35      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.3/62.3 kB 106.1 kB/s eta 0:00:00
+#9 23.70 Collecting pymongo==4.10.1
+#9 24.13   Downloading pymongo-4.10.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.4 MB)
+#9 26.94      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 529.9 kB/s eta 0:00:00
+#9 28.65 Collecting pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4
+#9 28.99   Downloading pydantic-2.13.5-py3-none-any.whl (472 kB)
+#9 29.44      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 472.6/472.6 kB 1.1 MB/s eta 0:00:00
+#9 29.99 Collecting typing-extensions>=4.8.0
+#9 30.49   Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+#9 30.86      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.6/45.6 kB 99.7 kB/s eta 0:00:00
+#9 31.60 Collecting starlette<0.42.0,>=0.40.0
+#9 32.06   Downloading starlette-0.41.3-py3-none-any.whl (73 kB)
+#9 32.09      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 73.2/73.2 kB 2.3 MB/s eta 0:00:00
+#9 32.78 Collecting click>=7.0
+#9 33.13   Downloading click-8.5.0-py3-none-any.whl (125 kB)
+#9 33.43      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 125.3/125.3 kB 430.9 kB/s eta 0:00:00
+#9 33.86 Collecting h11>=0.8
+#9 34.33   Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+#9 36.02 Collecting watchfiles>=0.13
+#9 36.30   Downloading watchfiles-1.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (457 kB)
+#9 36.86      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 457.1/457.1 kB 832.6 kB/s eta 0:00:00
+#9 37.52 Collecting uvloop!=0.15.0,!=0.15.1,>=0.14.0
+#9 37.81   Downloading uvloop-0.22.1-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (3.7 MB)
+#9 41.44      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.7/3.7 MB 1.0 MB/s eta 0:00:00
+#9 43.30 Collecting websockets>=10.4
+#9 43.64   Downloading websockets-16.1.1-cp310-cp310-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (186 kB)
+#9 43.76      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 186.0/186.0 kB 1.7 MB/s eta 0:00:00
+#9 44.41 Collecting httptools>=0.6.3
+#9 45.04   Downloading httptools-0.8.0-cp310-cp310-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (450 kB)
+#9 45.56      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 450.0/450.0 kB 879.7 kB/s eta 0:00:00
+#9 45.99 Collecting python-dotenv>=0.13
+#9 46.28   Downloading python_dotenv-1.2.3-py3-none-any.whl (22 kB)
+#9 46.99 Collecting pyyaml>=5.1
+#9 47.26   Downloading pyyaml-6.0.3-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (770 kB)
+#9 47.79      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 770.3/770.3 kB 1.4 MB/s eta 0:00:00
+#9 48.20 Collecting dnspython<3.0.0,>=1.16.0
+#9 48.49   Downloading dnspython-2.8.0-py3-none-any.whl (331 kB)
+#9 48.73      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 331.1/331.1 kB 1.3 MB/s eta 0:00:00
+#9 49.18 Collecting typing-inspection>=0.4.2
+#9 49.46   Downloading typing_inspection-0.4.4-py3-none-any.whl (14 kB)
+#9 49.83 Collecting annotated-types>=0.6.0
+#9 50.09   Downloading annotated_types-0.8.0-py3-none-any.whl (13 kB)
+#9 56.33 Collecting pydantic-core==2.46.5
+#9 56.60   Downloading pydantic_core-2.46.5-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.1 MB)
+#9 57.91      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 1.6 MB/s eta 0:00:00
+#9 58.28 Collecting anyio<5,>=3.4.0
+#9 58.54   Downloading anyio-4.15.1-py3-none-any.whl (132 kB)
+#9 58.67      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 132.1/132.1 kB 1.1 MB/s eta 0:00:00
+#9 59.05 Collecting exceptiongroup>=1.0.2
+#9 59.33   Downloading exceptiongroup-1.3.1-py3-none-any.whl (16 kB)
+#9 59.81 Collecting idna>=2.8
+#9 60.09   Downloading idna-3.19-py3-none-any.whl (68 kB)
+#9 60.19      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 68.5/68.5 kB 626.9 kB/s eta 0:00:00
+#9 60.55 Installing collected packages: websockets, uvloop, typing-extensions, pyyaml, python-dotenv, idna, httptools, h11, dnspython, click, annotated-types, uvicorn, typing-inspection, pymongo, pydantic-core, exceptiongroup, pydantic, anyio, watchfiles, starlette, fastapi
+#9 62.99 Successfully installed annotated-types-0.8.0 anyio-4.15.1 click-8.5.0 dnspython-2.8.0 exceptiongroup-1.3.1 fastapi-0.115.6 h11-0.16.0 httptools-0.8.0 idna-3.19 pydantic-2.13.5 pydantic-core-2.46.5 pymongo-4.10.1 python-dotenv-1.2.3 pyyaml-6.0.3 starlette-0.41.3 typing-extensions-4.16.0 typing-inspection-0.4.4 uvicorn-0.34.0 uvloop-0.22.1 watchfiles-1.2.0 websockets-16.1.1
+#9 62.99 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+#9 65.74 
+#9 65.74 [notice] A new release of pip is available: 23.0.1 -> 26.2.1
+#9 65.74 [notice] To update, run: pip install --upgrade pip
+#9 DONE 66.5s
+
+#10 [5/5] COPY . .
+#10 DONE 0.2s
+
+#11 exporting to image
+#11 exporting layers
+#11 exporting layers 0.5s done
+#11 writing image sha256:1e4bca5303c81887af55ca8832fa13236a84eb2c656c465ec16fe75c759fe07a done
+#11 naming to docker.io/library/progect-dashboard 0.0s done
+#11 DONE 0.6s
+
+#12 resolving provenance for metadata file
+#12 DONE 0.1s

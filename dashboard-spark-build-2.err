@@ -1,0 +1,19 @@
+ Image progect-dashboard Building 
+Dockerfile:5
+
+--------------------
+
+   3 |     WORKDIR /app
+
+   4 |     COPY requirements.dashboard.txt .
+
+   5 | >>> RUN pip install --no-cache-dir -r requirements.dashboard.txt
+
+   6 |     COPY . .
+
+   7 |     USER spark
+
+--------------------
+
+failed to solve: process "/bin/sh -c pip install --no-cache-dir -r requirements.dashboard.txt" did not complete successfully: exit code: 1
+
