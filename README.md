@@ -1,4 +1,4 @@
-# Financial Fraud Detection System — Big Data Streaming
+# Real Financial Fraud Detection System — Big Data Streaming
 
 A practical Big Data streaming project that simulates bank transactions, processes them in real time, and identifies potentially fraudulent activity using rule-based checks and an existing XGBoost model.
 
